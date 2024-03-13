@@ -80,7 +80,7 @@ const Header: React.FC = () => {
                     ))}
                 </nav>
                 <div className="mobile">
-                    <DropdownMenu navLinks={links} />
+                    <DropdownMenu navLinks={links as { label: string; href: string }[]} />
                 </div>
             </div>
         </div>

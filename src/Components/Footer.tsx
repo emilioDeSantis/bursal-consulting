@@ -1,7 +1,6 @@
 import React from "react";
-import LogoOnly from "./LogoOnly";
-import { dividerStroke } from "./RowDivider";
 import Link from "next/link";
+import Logo from "./Logo";
 
 const Footer: React.FC = () => {
     return (
@@ -21,12 +20,12 @@ const Footer: React.FC = () => {
                     paddingInline: "5vw",
                 }}
             >
-                <LogoOnly />
+                <Logo />
             </div>
             <div
                 style={{
                     width: "100%",
-                    borderTop: dividerStroke,
+                    borderTop: '1px solid #191919',
                     marginTop: "3rem",
                 }}
             />
