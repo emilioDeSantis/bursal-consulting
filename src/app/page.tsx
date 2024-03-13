@@ -148,6 +148,9 @@ export default function Home() {
                             textTransform: "uppercase",
                         }}
                     >
+                    {process.env.IS_ADMIN == 'true' ? "admin" : "normal"}
+                      {process.env.IS_ADMIN ? "adminx" : "normalx"}
+                      {process.env.IS_ADMIN}
                         Building Success Through Expertise
                     </h1>
                     <div
