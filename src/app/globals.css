@@ -121,7 +121,7 @@ textarea.admin {
     min-height: 20px; /* Minimum height to start with, can be adjusted */
     padding: 0; /* Reset padding */
     margin: 0; /* Reset margin */
-    border: 1px solid #0003; /* Add a border */
+    border: 1px solid #79e9; /* Add a border */
     /* outline: none;   */
     background: none; /* Transparent background */
     resize: none; /* Disable resizing */

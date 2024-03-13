@@ -6,10 +6,16 @@ import Link from "next/link";
 import EditorDiv from "@/editor/EditorDiv";
 import EditorH1 from "@/editor/EditorH1";
 import EditorP from "@/editor/EditorP";
+import EditorH2 from "@/editor/EditorH2";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const projects = ["hero2", "hero3", "hero2"];
+// const projects = [{href:"hero2", path: 'orient-heights-station'}, "hero3", "hero2"];
+const projects = [
+    { href: "hero2", path: "orient-heights-station" },
+    { href: "hero3", path: "orient-heights-station" },
+    { href: "hero2", path: "orient-heights-station" },
+];
 
 export default function Home() {
     return (
@@ -180,7 +186,7 @@ export default function Home() {
                         top: "-3.5rem",
                     }}
                 >
-                    <h2
+                    <div
                         className="shadow"
                         style={{
                             // background: "#00704A",
@@ -190,16 +196,19 @@ export default function Home() {
                             borderTopRightRadius: "1.6rem",
                             borderBottomRightRadius: "1.6rem",
                             color: "white",
-                            fontSize: "1.4rem",
-                            fontWeight: 200,
-                            letterSpacing: "0.1em",
-                            paddingInline: "5vw",
-                            textTransform: "uppercase",
                             paddingTop: "1rem",
                         }}
-                    >
-                        Projects
-                    </h2>
+                    ><EditorH2
+                    style={{
+
+                        fontSize: "1.4rem",
+                        fontWeight: 200,
+                        letterSpacing: "0.1em",
+                        paddingInline: "5vw",
+                        textTransform: "uppercase",
+                    }}
+                        id="home-page-projects-title"/>
+                    </div>
                 </div>
                 <div
                     style={{
@@ -216,7 +225,8 @@ export default function Home() {
                         }}
                     >
                         {projects.map((project, index) => (
-                            <div
+                            <Link
+                                href={`/projects/${project.path}`}
                                 key={index}
                                 style={{
                                     height: "Clamp(12rem, 24vw, 18rem)",
@@ -228,7 +238,7 @@ export default function Home() {
                             >
                                 <Image
                                     fill
-                                    src={`/${project}.png`}
+                                    src={`/${project.href}.png`}
                                     alt={"image"}
                                     sizes="100vw"
                                     priority
@@ -237,7 +247,7 @@ export default function Home() {
                                         borderRadius: "1.6rem",
                                     }}
                                 />
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
@@ -253,17 +263,16 @@ export default function Home() {
                     alignItems: "flex-start",
                 }}
             >
-                <p
+                <EditorP
+                    id="home-page-projects-text"
                     style={{
                         lineHeight: "1.4",
                         opacity: 0.6,
                         maxWidth: "36rem",
                     }}
-                >
-                    {`Leveraging over 30 years of project management and construction insight to guide projects from conception to completion, ensuring cost-efficiency, risk mitigation, and unparalleled quality for every client.`}
-                </p>
+                />
                 <Link
-                    href="/contact"
+                    href="/projects"
                     style={{
                         color: "#00BB7B",
                         paddingBlock: "1rem",
@@ -278,7 +287,7 @@ export default function Home() {
                         borderRadius: "1000px",
                     }}
                 >
-                    Contact Us Today →
+                    View All Projects →
                 </Link>
             </div>
             <div style={{ height: "20rem" }} />
