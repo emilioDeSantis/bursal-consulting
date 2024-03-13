@@ -115,6 +115,30 @@ a {
     color: inherit;
     text-decoration: none;
 }
+textarea.admin {
+    width: 100%; /* Take up the full container width */
+    height: auto; /* Adjust height automatically based on content */
+    min-height: 20px; /* Minimum height to start with, can be adjusted */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    border: 1px solid #0003; /* Add a border */
+    /* outline: none;   */
+    background: none; /* Transparent background */
+    resize: none; /* Disable resizing */
+    overflow: hidden; /* Hide scrollbars */
+    font-family: inherit; /* Inherit font family from parent */
+    font-size: inherit; /* Inherit font size from parent */
+    color: inherit; /* Inherit text color from parent */
+    line-height: inherit; /* Inherit line height from parent */
+    text-align: inherit; /* Inherit text alignment */
+  }
+  
+  
+  /* Optional: Remove input focus outline to more closely mimic a div */
+  textarea.admin:focus {
+    /* outline: none;  */
+  }
+  
 
 .desktop {
     display: none;

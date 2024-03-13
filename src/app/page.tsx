@@ -1,7 +1,11 @@
+// "use client";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
 import Link from "next/link";
+import EditorDiv from "@/editor/EditorDiv";
+import EditorH1 from "@/editor/EditorH1";
+import EditorP from "@/editor/EditorP";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,32 +28,6 @@ export default function Home() {
                     display: "flex",
                 }}
             >
-                <div
-                    style={{
-                        position: "absolute",
-                        width: "100%",
-                        height: "100vh",
-                    }}
-                >
-                    <div
-                        style={{
-                            position: "relative",
-                            height: "100%",
-                            width: "100%",
-                        }}
-                    >
-                        {/* <Image
-                            fill
-                            src={"/mbta_station_illustration.png"}
-                            alt={"image"}
-                            sizes="100vw"
-                            priority
-                            style={{
-                                objectFit: "cover",
-                            }}
-                        /> */}
-                    </div>
-                </div>
                 <div
                     style={{
                         position: "relative",
@@ -139,7 +117,8 @@ export default function Home() {
                         width: "100%",
                     }}
                 >
-                    <h1
+                    <EditorH1
+                        id="home-page-title"
                         style={{
                             fontSize: "Clamp(2rem, 4vw, 3rem)",
                             fontWeight: 200,
@@ -147,12 +126,7 @@ export default function Home() {
                             marginTop: "3.6rem",
                             textTransform: "uppercase",
                         }}
-                    >
-                    {process.env.IS_ADMIN == 'true' ? "admin" : "normal"}
-                      {process.env.IS_ADMIN ? "adminx" : "normalx"}
-                      {process.env.IS_ADMIN}
-                        Building Success Through Expertise
-                    </h1>
+                    />
                     <div
                         style={{
                             height: "0.8px",
@@ -161,17 +135,15 @@ export default function Home() {
                             marginTop: "1rem",
                         }}
                     />
-
-                    <p
+                    <EditorP
+                        id="home-page-hero-text"
                         style={{
                             lineHeight: "1.4",
                             marginTop: "3.6rem",
                             opacity: 0.6,
                             maxWidth: "36rem",
                         }}
-                    >
-                        {`Leveraging over 30 years of project management and construction insight to guide projects from conception to completion, ensuring cost-efficiency, risk mitigation, and unparalleled quality for every client.`}
-                    </p>
+                    />
                     <Link
                         href="/contact"
                         style={{
