@@ -5,28 +5,28 @@ import React from "react";
 const Page: React.FC = () => {
     return (
         <ProjectPage
-            titleId="orient-heights-station-title"
-            paragraphId="orient-heights-station-paragraph"
-            clientId="orient-heights-station-client"
-            imageHref="/orient-heights.png"
-            location="Boston, MA"
+            titleId="cerritos-center-title"
+            paragraphId="cerritos-center-paragraph"
+            clientId="cerritos-center-client"
+            imageHref="/cerritos-center.png"
+            location="Cerritos, CA"
         >
             <EditorP
-                id="orient-heights-station-contribution-1"
+                id="cerritos-center-contribution-1"
                 style={{
                     lineHeight: "1.4",
                     width: "100%",
                 }}
             />
             <EditorP
-                id="orient-heights-station-contribution-2"
+                id="cerritos-center-contribution-2"
                 style={{
                     lineHeight: "1.4",
                     width: "100%",
                 }}
             />
             <EditorP
-                id="orient-heights-station-contribution-3"
+                id="cerritos-center-contribution-3"
                 style={{
                     lineHeight: "1.4",
                     width: "100%",

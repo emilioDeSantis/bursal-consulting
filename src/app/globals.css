@@ -131,14 +131,12 @@ textarea.admin {
     color: inherit; /* Inherit text color from parent */
     line-height: inherit; /* Inherit line height from parent */
     text-align: inherit; /* Inherit text alignment */
-  }
-  
-  
-  /* Optional: Remove input focus outline to more closely mimic a div */
-  textarea.admin:focus {
+}
+
+/* Optional: Remove input focus outline to more closely mimic a div */
+textarea.admin:focus {
     /* outline: none;  */
-  }
-  
+}
 
 .desktop {
     display: none;
@@ -155,8 +153,15 @@ textarea.admin {
     width: 100%;
     height: 70vw;
 }
+.services-image-container {
+    width: 100%;
+    height: 60vw;
+}
 
 .hero-container {
+    flex-direction: column;
+}
+.services-container {
     flex-direction: column;
 }
 
@@ -164,7 +169,14 @@ textarea.admin {
     border-top-right-radius: 1.6rem;
     border-bottom-right-radius: 1.6rem;
 }
+.services-image-border-radius {
+    border-top-left-radius: 1.6rem;
+    border-bottom-left-radius: 1.6rem;
+}
 
+.services-links {
+    padding-inline: 5vw;
+}
 
 @media (min-width: 768px) {
     .desktop {
@@ -178,11 +190,25 @@ textarea.admin {
         width: 45vw;
         height: 33vw;
     }
+    .services-image-container {
+        width: 45vw;
+        height: 28vw;
+    }
     .hero-container {
         flex-direction: row-reverse;
+    }
+    .services-container {
+        flex-direction: row;
     }
 
     .hero-image-border-radius {
         border-radius: 1.6rem;
+    }
+    .services-image-border-radius {
+        border-radius: 1.6rem;
+    }
+
+    .services-links {
+        padding-inline: 10vw;
     }
 }

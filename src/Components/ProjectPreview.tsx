@@ -25,15 +25,31 @@ const ProjectPreview: FC<ProjectPreviewProps> = ({
             style={{
                 display: "flex",
                 flexDirection: "column",
+                minWidth: "15rem",
+                flex: 1,
+                justifyContent: "flex-end",
+                marginTop: "2rem",
             }}
         >
-            <div
+            <EditorH2
+                id={titleId}
+                style={{
+                    fontSize: "1.5rem",
+                    fontWeight: 200,
+                    lineHeight: "1.2",
+                    textTransform: "uppercase",
+                }}
+            />
+            <Link
+                href={"/projects/" + path}
                 className="shadow"
                 style={{
                     position: "relative",
                     width: "100%",
                     aspectRatio: "3/2",
                     borderRadius: "1.6rem",
+                    marginTop: "1rem",
+                    background: '#bbcccc',
                 }}
             >
                 <Image
@@ -47,15 +63,14 @@ const ProjectPreview: FC<ProjectPreviewProps> = ({
                         borderRadius: "1.6rem",
                     }}
                 />
-            </div>
-            <EditorH2 id={titleId} />
+            </Link>
             <Link
-                href={'/projects/'+path}
+                href={"/projects/" + path}
                 style={{
                     color: "#00BB7B",
                     border: "1px solid #00BB7B",
                     padding: "0.6rem 1.6rem",
-                    marginTop: "3rem",
+                    marginTop: "2rem",
                     background: "none",
                     fontWeight: 300,
                     fontSize: "1.2rem",

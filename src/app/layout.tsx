@@ -1,5 +1,6 @@
 import Header from "@/Components/Header";
 import "./globals.css";
+import Footer from "@/Components/Footer";
 
 export const revalidate = 1;
 
@@ -18,6 +19,7 @@ export default function RootLayout({
             <body>
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );

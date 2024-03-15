@@ -15,17 +15,21 @@ const Footer: React.FC = () => {
         >
             <div
                 style={{
-                    height: "Min(12rem, 20vw)",
-                    opacity: 0.1,
+                    textTransform: "uppercase",
+                    lineHeight: "90%",
+                    fontWeight: 300,
+                    letterSpacing: "0.07em",
+                    fontSize: "2rem",
                     paddingInline: "5vw",
+                    opacity: 0.3,
                 }}
             >
-                <Logo />
+                Bursal<br></br>Consulting<br></br>&amp; Management
             </div>
             <div
                 style={{
                     width: "100%",
-                    borderTop: '1px solid #191919',
+                    borderTop: "1px solid #19191922",
                     marginTop: "3rem",
                 }}
             />
@@ -43,7 +47,7 @@ const Footer: React.FC = () => {
                     gap: "3rem",
                 }}
             >
-                <div>
+                {/* <div>
                     <h2 style={{}}>Explore</h2>
                     <nav
                         style={{
@@ -81,7 +85,7 @@ const Footer: React.FC = () => {
                             </p>
                         </div>
                     </section>
-                </div>
+                </div> */}
             </div>
             <div
                 style={{
@@ -96,14 +100,22 @@ const Footer: React.FC = () => {
                     marginTop: "3rem",
                 }}
             >
-                <p style={{
-                    textTransform: "uppercase",
-                }}>© 2024 Phoenix construction resources Inc.</p>
-                <Link 
-                target="_blank"
-                 style={{
-                    whiteSpace: "nowrap",
-                }} href="https://www.ui-design-studio.com">UI Design Studio</Link>
+                <p
+                    style={{
+                        textTransform: "uppercase",
+                    }}
+                >
+                    © 2024 Bursal Construction Management LLC.
+                </p>
+                <Link
+                    target="_blank"
+                    style={{
+                        whiteSpace: "nowrap",
+                    }}
+                    href="https://www.ui-design-studio.com"
+                >
+                    UI Design Studio
+                </Link>
             </div>
         </footer>
     );

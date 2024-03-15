@@ -11,6 +11,7 @@ import { FC } from "react";
 interface ProjectPageProps {
     titleId: string;
     paragraphId: string;
+    clientId: string;
     imageHref: string;
     location: string;
     children: React.ReactNode;
@@ -19,6 +20,7 @@ interface ProjectPageProps {
 const ProjectPage: FC<ProjectPageProps> = ({
     titleId,
     paragraphId,
+    clientId,
     imageHref,
     children,
     location,
@@ -77,6 +79,7 @@ const ProjectPage: FC<ProjectPageProps> = ({
                             className="shadow hero-image-container hero-image-border-radius"
                             style={{
                                 position: "relative",
+                                background: '#bbcccc',
                             }}
                         >
                             <Image
@@ -150,21 +153,60 @@ const ProjectPage: FC<ProjectPageProps> = ({
                     display: "flex",
                     flexDirection: "column",
                     paddingInline: "5vw",
-                    alignItems: 'flex-start',
+                    alignItems: "flex-start",
                     width: "100%",
                 }}
             >
-                <h2 
-                        style={{
-                            fontSize: "Clamp(1.4rem, 3vw, 2rem)",
-                            fontWeight: 200,
-                            lineHeight: "1.2",
-                            marginTop: "5.6rem",
-                            textTransform: "uppercase",
-                        }}>
+                <h2
+                    style={{
+                        fontWeight: 400,
+                        lineHeight: "1.2",
+                        marginTop: "5rem",
+                        textTransform: "uppercase",
+                        fontSize: "1rem",
+                        letterSpacing: "0.1em",
+                        opacity: 0.8,
+                    }}
+                >
+                    Client
+                </h2>
+                <EditorDiv
+                    id={clientId}
+                    style={{
+                        fontWeight: 400,
+                        lineHeight: "1.2",
+                        marginTop: "0.4rem",
+                        // textTransform: "uppercase",
+                        // fontSize: "1.2rem",
+                        // letterSpacing: "0.1em",
+                        opacity: 0.6,
+                    }}
+                />
+                <h2
+                    style={{
+                        fontWeight: 400,
+                        lineHeight: "1.2",
+                        marginTop: "3rem",
+                        textTransform: "uppercase",
+                        fontSize: "1rem",
+                        letterSpacing: "0.1em",
+                        opacity: 0.8,
+                    }}
+                >
                     Contributions
                 </h2>
-                {children}
+                <div
+                    style={{
+                        maxWidth: "36rem",
+                        opacity: 0.6,
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "1rem",
+                        marginTop: "0.4rem",
+                    }}
+                >
+                    {children}
+                </div>
             </div>
         </main>
     );

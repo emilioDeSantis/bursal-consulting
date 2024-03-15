@@ -63,13 +63,31 @@ const Projects: React.FC = () => {
                 style={{
                     display: "flex",
                     paddingInline: "5vw",
-                    flexDirection: "column",
+                    // flexDirection: "column",
+                    flexWrap: "wrap",
+                    gap: "3rem",
+                    marginTop: "3rem",
                 }}
             >
                 <ProjectPreview
                     titleId="orient-heights-station-title"
                     path="orient-heights-station"
-                    imageHref="/hero3.png"
+                    imageHref="/orient-heights.png"
+                />
+                <ProjectPreview
+                    titleId="north-hero-drawbridge-title"
+                    path="north-hero-drawbridge"
+                    imageHref="/north-hero.png"
+                />
+                <ProjectPreview
+                    titleId="assembly-square-station-title"
+                    path="assembly-square-station"
+                    imageHref="/assembly-station.png"  
+                />  
+                <ProjectPreview
+                    titleId="cerritos-center-title"
+                    path="cerritos-center"
+                    imageHref="/cerritos-center.png"
                 />
             </div>
         </main>
