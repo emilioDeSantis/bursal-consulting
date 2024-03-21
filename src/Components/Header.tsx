@@ -73,6 +73,7 @@ const Header: React.FC = () => {
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
+                                transition: "0.3s",
                             }}
                             href={link.href}
                         >

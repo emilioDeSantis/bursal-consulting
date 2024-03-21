@@ -5,7 +5,56 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const projects = ["hero2", "hero3", "hero2"];
+export const projects = [
+    {
+        id: "green-line-extension",
+        imageHref: "green-line-extension-3",
+    },
+    {
+        id: "ric-renovation",
+        imageHref: "ric-renovation",
+    },
+    {
+        id: "amgen-buildout",
+        imageHref: "amgen-buildout-2",
+    },
+    {
+        id: "cerritos-center",
+        imageHref: "cerritos-center",
+    },
+    {
+        id: "mbta-wollaston",
+        imageHref: "Wall",
+    },
+    {
+        id: "central-artery",
+        imageHref: "central-artery",
+    },
+    {
+        id: "mission-hospital",
+        imageHref: "mission-hospital",
+    },
+    {
+        id: "north-hero-drawbridge",
+        imageHref: "north-hero-drawbridge",
+    },
+    {
+        id: "ruggles-upgrade",
+        imageHref: "ruggles-upgrade",
+    },
+    {
+        id: "assembly-square-station",
+        imageHref: "assembly-square-station",
+    },
+    {
+        id: "west-haven-station",
+        imageHref: "west-haven-station",
+    },
+    {
+        id: "orient-heights-station",
+        imageHref: "orient-heights-station-2",
+    },
+];
 
 const Projects: React.FC = () => {
     return (
@@ -65,30 +114,17 @@ const Projects: React.FC = () => {
                     paddingInline: "5vw",
                     // flexDirection: "column",
                     flexWrap: "wrap",
-                    gap: "3rem",
+                    gap: "1.6rem",
                     marginTop: "3rem",
                 }}
             >
-                <ProjectPreview
-                    titleId="orient-heights-station-title"
-                    path="orient-heights-station"
-                    imageHref="/orient-heights.png"
-                />
-                <ProjectPreview
-                    titleId="north-hero-drawbridge-title"
-                    path="north-hero-drawbridge"
-                    imageHref="/north-hero.png"
-                />
-                <ProjectPreview
-                    titleId="assembly-square-station-title"
-                    path="assembly-square-station"
-                    imageHref="/assembly-station.png"  
-                />  
-                <ProjectPreview
-                    titleId="cerritos-center-title"
-                    path="cerritos-center"
-                    imageHref="/cerritos-center.png"
-                />
+                {projects.map((project) => (
+                    <ProjectPreview
+                        key={project.id}
+                        projectId={project.id}
+                        imageHref={`/${project.imageHref}.png`}
+                    />
+                ))}
             </div>
         </main>
     );

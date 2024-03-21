@@ -165,6 +165,10 @@ textarea.admin:focus {
     flex-direction: column;
 }
 
+.clientele-container {
+    flex-direction: column;
+}
+
 .hero-image-border-radius {
     border-top-right-radius: 1.6rem;
     border-bottom-right-radius: 1.6rem;
@@ -178,6 +182,64 @@ textarea.admin:focus {
     padding-inline: 5vw;
 }
 
+.hover-overlay {
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.hover-overlay:hover {
+    /* backdrop-filter: blur(10px); */
+    opacity: 1;
+}
+
+.button-hover {
+    transition: all 0.3s ease;
+    color: #00bb7b;
+}
+
+.button-hover:hover {
+    background: #00bb7b;
+    color: white;
+}
+
+.nav-link {
+    opacity: 0.5;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+p {
+    line-height: 1.4;
+    opacity: 0.6;
+}
+
+.certifications-cards-container {
+    gap: 2rem;
+}
+
+.certifications-container {
+    margin-top: 5rem;
+}
+
+.about-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.clientele-list-container {
+    gap: 0.6rem;
+}
+
+.client-name {
+    font-size: 1.2rem;
+}
 @media (min-width: 768px) {
     .desktop {
         display: flex;
@@ -200,6 +262,10 @@ textarea.admin:focus {
     .services-container {
         flex-direction: row;
     }
+    .clientele-container {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 
     .hero-image-border-radius {
         border-radius: 1.6rem;
@@ -210,5 +276,32 @@ textarea.admin:focus {
 
     .services-links {
         padding-inline: 10vw;
+    }
+    .certifications-cards-container {
+        gap: 5rem;
+    }
+
+    .certifications-container {
+        margin-top: 12vw;
+    }
+
+    .about-container {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 12rem;
+    }
+
+    .flex-direction {
+        flex-direction: row;
+    }
+
+    .clientele-list-container {
+        justify-content: space-between;
+    }
+
+    .client-name {
+        font-size: 1vw;
     }
 }
