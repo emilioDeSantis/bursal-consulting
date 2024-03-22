@@ -1,4 +1,4 @@
-import { green } from "@/app/page";
+import { green } from "@/app/utils/colors";
 import EditorH2 from "@/editor/EditorH2";
 import EditorH3 from "@/editor/EditorH3";
 import EditorP from "@/editor/EditorP";

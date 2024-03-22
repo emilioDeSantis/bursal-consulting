@@ -12,7 +12,6 @@ import Certifications from "@/Components/Certifications";
 import About from "@/Components/About";
 import Clientele from "@/Components/Clientele";
 
-export const green ='#00704A';
 
 export default function Home() {
     return (
