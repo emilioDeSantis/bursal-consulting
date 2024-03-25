@@ -5,9 +5,10 @@ import Link from "next/link";
 import EditorDiv from "@/editor/EditorDiv";
 import EditorH1 from "@/editor/EditorH1";
 import EditorP from "@/editor/EditorP";
-import { FC } from "react";
+import { FC, Fragment } from "react";
 import { projects } from "../page";
 import EditorH3 from "@/editor/EditorH3";
+import { green } from "@/app/utils/colors";
 
 const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
     params,
@@ -50,7 +51,7 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
                             className="shadow"
                             style={{
                                 // background: "#00704A",
-                                background: "#24463B",
+                                background: green,
                                 width: "100%",
                                 height: "100%",
                                 borderTopLeftRadius: "1.6rem",
@@ -91,7 +92,8 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
                                 right: "5vw",
                                 color: "white",
                                 // fontSize: "1.2rem",
-                                fontWeight: 200,
+                                fontWeight: 300,
+                                opacity: 0.8,
                                 letterSpacing: "0.1em",
                             }}
                         />
@@ -111,7 +113,7 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
                         id={`${project?.id}-title`}
                         style={{
                             fontSize: "Clamp(2rem, 4vw, 3rem)",
-                            fontWeight: 200,
+                            fontWeight: 300,
                             lineHeight: "1.2",
                             marginTop: "5.6rem",
                             textTransform: "uppercase",
@@ -159,13 +161,13 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
                     paddingInline: "5vw",
                     alignItems: "flex-start",
                     width: "100%",
-                    marginTop: "3rem",
+                    marginTop: "2.4rem",
                 }}
             >
                 <h2
                     style={{
                         fontWeight: 400,
-                        lineHeight: "1.2",
+                        lineHeight: "2",
                         textTransform: "uppercase",
                         fontSize: "1rem",
                         letterSpacing: "0.1em",
@@ -174,22 +176,30 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
                 >
                     Role
                 </h2>
-                <EditorDiv
-                    id={`${project?.id}-role`}
-                    style={{
-                        fontWeight: 400,
-                        lineHeight: "1.2",
-                        marginTop: "0.4rem",
-                        // textTransform: "uppercase",
-                        // fontSize: "1.2rem",
-                        // letterSpacing: "0.1em",
-                        opacity: 0.6,
-                    }}
-                />
+                {project.roles.map((role, index) => (
+                    <Link
+                        href={`/services/${role
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`}
+                        key={role}
+                        style={{
+                            fontWeight: 400,
+                            lineHeight: "1.2",
+                            marginTop: "0.4rem",
+                            color: "#00000088",
+                            // background: "#00000019",
+                            border: "1px solid #00000022",
+                            padding: "0.6rem 1rem",
+                            boxShadow: "0 2px 10px 0 #00000011",
+                        }}
+                    >
+                        {role} →
+                    </Link>
+                ))}
                 <h2
                     style={{
                         fontWeight: 400,
-                        lineHeight: "1.2",
+                        lineHeight: "2",
                         marginTop: "2rem",
                         textTransform: "uppercase",
                         fontSize: "1rem",
@@ -202,75 +212,45 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
                 <div
                     style={{
                         maxWidth: "36rem",
-                        opacity: 0.6,
                         display: "flex",
                         flexDirection: "column",
-                        gap: "1rem",
-                        marginTop: "0.4rem",
+                        marginTop: "-1rem",
                     }}
                 >
-                    <EditorH3
-                        id={`${project?.id}-contribution-1-title`}
-                        style={{
-                            lineHeight: "1.4",
-                            fontSize: "1.8rem",
-                            width: "100%",
-                            fontWeight: 500,
-                            marginTop: "1rem",
-                        }}
-                    />
-                    <EditorP
-                        id={`${project?.id}-contribution-1`}
-                        style={{
-                            lineHeight: "1.4",
-                            width: "100%",
-                        }}
-                    />
-                    <EditorH3
-                        id={`${project?.id}-contribution-2-title`}
-                        style={{
-                            lineHeight: "1.4",
-                            fontSize: "1.8rem",
-                            width: "100%",
-                            fontWeight: 500,
-                            marginTop: "1rem",
-                        }}
-                    />
-                    <EditorP
-                        id={`${project?.id}-contribution-2`}
-                        style={{
-                            lineHeight: "1.4",
-                            width: "100%",
-                        }}
-                    />
-                    <EditorH3
-                        id={`${project?.id}-contribution-3-title`}
-                        style={{
-                            lineHeight: "1.4",
-                            fontSize: "1.8rem",
-                            width: "100%",
-                            fontWeight: 500,
-                            marginTop: "1rem",
-                        }}
-                    />
-                    <EditorP
-                        id={`${project?.id}-contribution-3`}
-                        style={{
-                            lineHeight: "1.4",
-                            width: "100%",
-                        }}
-                    />
+                    {Array.from({ length: 3 }).map((_, index) => (
+                        <Fragment>
+                            <EditorH3
+                                id={`${project?.id}-contribution-${index+1}-title`}
+                                style={{
+                                    lineHeight: "1.4",
+                                    fontSize: "1rem",
+                                    width: "100%",
+                                    fontWeight: 600,
+                                    opacity: 1,
+                                    marginTop: "2rem",
+                                }}
+                            />
+                            <EditorP
+                                id={`${project?.id}-contribution-${index}`}
+                                style={{
+                                    lineHeight: "1.4",
+                                    width: "100%",
+                                    marginTop: "0.4rem",
+                                }}
+                            />
+                        </Fragment>
+                    ))}
                 </div>
 
                 <Link
-                    className="button-hover"
+                    className="button-hover "
                     href={"/projects"}
                     style={{
                         border: "1px solid #00BB7B",
                         padding: "0.6rem 1.6rem",
-                        marginTop: "3rem",
-                        fontWeight: 300,
-                        fontSize: "1.2rem",
+                        marginTop: "2rem",
+                        fontWeight: 400,
+                        fontSize: "1.1rem",
                         fontFamily: "Aeonik",
                         display: "flex",
                         justifyContent: "center",

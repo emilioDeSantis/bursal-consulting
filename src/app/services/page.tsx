@@ -9,65 +9,52 @@ export const projects = [
     {
         id: "green-line-extension",
         imageHref: "green-line-extension-3",
-        roles: ["Project Management"],
     },
     {
         id: "ric-renovation",
         imageHref: "ric-renovation",
-        roles: ["Project Management"],
     },
     {
         id: "amgen-buildout",
         imageHref: "amgen-buildout-2",
-        roles: ["Project Management"],
     },
     {
         id: "cerritos-center",
         imageHref: "cerritos-center",
-        roles: ["Project Management"],
     },
     {
         id: "mbta-wollaston",
         imageHref: "Wall",
-        roles: ["Estimating", "Risk Assessment"],
     },
     {
         id: "central-artery",
         imageHref: "central-artery",
-        roles: ["Project Management"],
     },
     {
         id: "mission-hospital",
-        imageHref: "mission-hospital",  
-        roles: ["Project Management", "Estimating"],
+        imageHref: "mission-hospital",
     },
     {
         id: "north-hero-drawbridge",
         imageHref: "north-hero-drawbridge",
-        roles: ["Estimating", "Risk Assessment"],
     },
     {
         id: "ruggles-upgrade",
         imageHref: "ruggles-upgrade",
-        roles: ["Estimating", "Project Management"],
     },
     {
         id: "assembly-square-station",
         imageHref: "assembly-square-station",
-        roles: ["Project Management", "Scheduling"],
     },
     {
         id: "west-haven-station",
         imageHref: "west-haven-station",
-        roles: ["Project Management", "Estimating"],
     },
     {
         id: "orient-heights-station",
         imageHref: "orient-heights-station-2",
-        roles: ["Estimating", "Risk Assessment"],
     },
 ];
-
 
 const Projects: React.FC = () => {
     return (
