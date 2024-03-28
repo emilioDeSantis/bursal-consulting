@@ -96,6 +96,20 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Favorit";
+    src: url("/fonts/ABCFavoritMono-Bold.otf") format("opentype");
+    font-weight: 700; /* Adjust as needed */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Favorit";
+    src: url("/fonts/ABCFavoritMono-Book.otf") format("opentype");
+    font-weight: 400; /* Adjust as needed */
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -108,6 +122,7 @@ body {
     overflow-x: hidden;
     color: #191919;
     background: white;
+    /* background: #f4f4f4; */
     font-family: "Aeonik", sans-serif;
 }
 
@@ -232,6 +247,9 @@ p {
 .flex-direction {
     flex-direction: column;
 }
+.flex-direction-reverse {
+    flex-direction: column;
+}
 
 .clientele-list-container {
     gap: 0.6rem;
@@ -240,6 +258,83 @@ p {
 .client-name {
     font-size: 1.2rem;
 }
+
+.padding-inline {
+    padding-inline: 0.8rem;
+}
+
+.services-links-border {
+    border-bottom: 1px solid #00000018;
+    border-right: none;
+}
+
+.internal-inline-padding {
+    padding-inline: 1.2rem;
+}
+
+.internal-inline-padding-left {
+    padding-left: 1.2rem;
+}
+
+.mobile-padding-block {
+    padding-block: 0.6rem;
+}
+
+.project-margin-top {
+    margin-top: 3rem;
+}
+
+.green-hover {
+    color: #00000099;
+    transition: all 0.3s ease;
+}
+
+.green-hover:hover {
+    color: #00704a;
+}
+.services-page-margin-top {
+    margin-top: 3rem;
+}
+
+.opacity-hover {
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.opacity-hover:hover {
+    opacity: 1;
+}
+
+.role-hover {
+    border: 1px solid #00000022;
+    box-shadow: 0 2px 10px 0 #00000011;
+    transition: all 0.3s ease;
+    color: #00000088;
+}
+
+.role-hover:hover {
+    border: 1px solid #00704a88;
+    box-shadow: 0 2px 16px 0 #00000022;
+    color: #00704a;
+}
+
+.hero-text-padding-block {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.hero-container-2 {
+    align-items: flex-start;
+}
+
+.hero-green-width {
+    width: 66%;
+}
+
+.hero-container-3 {
+    min-height: 100%;
+}
+
 @media (min-width: 768px) {
     .desktop {
         display: flex;
@@ -296,6 +391,9 @@ p {
     .flex-direction {
         flex-direction: row;
     }
+    .flex-direction-reverse {
+        flex-direction: row-reverse;
+    }
 
     .clientele-list-container {
         justify-content: space-between;
@@ -303,5 +401,50 @@ p {
 
     .client-name {
         font-size: 1vw;
+    }
+
+    .padding-inline {
+        padding-inline: Calc(30vw - 20rem);
+    }
+
+    .services-links-border {
+        border-bottom: none;
+    }
+    .services-link-border:last-child {
+        border-left: 1px solid #00000018;
+    }
+    .internal-inline-padding {
+        padding-inline: 3rem;
+    }
+    .internal-inline-padding-left {
+        padding-left: 3rem;
+    }
+
+    .mobile-padding-block {
+        padding-block: 0;
+    }
+    .project-margin-top {
+        margin-top: 6rem;
+    }
+
+    .services-page-margin-top {
+        margin-top: 10rem;
+    }
+
+    .hero-text-padding-block {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-green-width {
+        width: 40%;
+    }
+
+    .hero-container-3 {
+        min-height: 0;
+    }
+
+    .hero-container-2 {
+        align-items: center;
     }
 }

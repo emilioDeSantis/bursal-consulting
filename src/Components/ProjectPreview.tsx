@@ -9,6 +9,7 @@ import EditorP from "@/editor/EditorP";
 import { FC } from "react";
 import EditorH2 from "@/editor/EditorH2";
 import HoverOverlay from "./HoverOverlay";
+import { border } from "@/app/utils/colors";
 
 interface ProjectPreviewProps {
     projectId: string;
@@ -16,6 +17,82 @@ interface ProjectPreviewProps {
 }
 
 const ProjectPreview: FC<ProjectPreviewProps> = ({ projectId, imageHref }) => {
+    return (
+        <section
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                minWidth: "18rem",
+                maxWidth: "26rem",
+                flex: 1,
+                marginTop: "0rem",
+            }}
+        >
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "100%",
+                    justifyContent: "flex-end",
+                    paddingBlock: "2rem",
+                    // background: "#bbcccc",
+                }}
+            >
+                <EditorH2
+                    id={`${projectId}-title`}
+                    style={{
+                        fontSize: "1.2rem",
+                        fontWeight: 700,
+                        lineHeight: "1.2",
+                        // opacity: 0.7,
+                        // paddingInline: "1.6rem",
+                        textTransform: "uppercase",
+                        whiteSpace: "nowrap",
+                    }}
+                />
+                <Link
+                    href={"/projects/" + projectId}
+                    style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "3/2",
+                        marginTop: "1rem",
+                        background: "#bbcccc",
+                    }}
+                >
+                    <Image
+                        fill
+                        src={imageHref}
+                        alt={"image"}
+                        sizes="400px"
+                        priority
+                        style={{
+                            objectFit: "cover",
+                        }}
+                    />
+                    <HoverOverlay />
+                </Link>
+                <Link
+                    className="button-hover"
+                    href={"/projects/" + projectId}
+                    style={{
+                        border: "1px solid #00BB7B",
+                        padding: "0.6rem 1.6rem",
+                        marginTop: "1rem",
+                        fontWeight: 400,
+                        // fontSize: "1.2rem",
+                        fontFamily: "Favorit",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+
+                    }}
+                >
+                    View Project →
+                </Link>
+            </div>
+        </section>
+    );
     return (
         <section
             style={{

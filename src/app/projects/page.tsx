@@ -4,72 +4,99 @@ import EditorP from "@/editor/EditorP";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-export const projects = [
-    {
-        id: "green-line-extension",
-        imageHref: "green-line-extension-3",
-        roles: ["Project Management"],
-    },
-    {
-        id: "ric-renovation",
-        imageHref: "ric-renovation",
-        roles: ["Project Management"],
-    },
-    {
-        id: "amgen-buildout",
-        imageHref: "amgen-buildout-2",
-        roles: ["Project Management"],
-    },
-    {
-        id: "cerritos-center",
-        imageHref: "cerritos-center",
-        roles: ["Project Management"],
-    },
-    {
-        id: "mbta-wollaston",
-        imageHref: "Wall",
-        roles: ["Estimating", "Risk Assessment"],
-    },
-    {
-        id: "central-artery",
-        imageHref: "central-artery",
-        roles: ["Project Management"],
-    },
-    {
-        id: "mission-hospital",
-        imageHref: "mission-hospital",  
-        roles: ["Project Management", "Estimating"],
-    },
-    {
-        id: "north-hero-drawbridge",
-        imageHref: "north-hero-drawbridge",
-        roles: ["Estimating", "Risk Assessment"],
-    },
-    {
-        id: "ruggles-upgrade",
-        imageHref: "ruggles-upgrade",
-        roles: ["Estimating", "Project Management"],
-    },
-    {
-        id: "assembly-square-station",
-        imageHref: "assembly-square-station",
-        roles: ["Project Management", "Scheduling"],
-    },
-    {
-        id: "west-haven-station",
-        imageHref: "west-haven-station",
-        roles: ["Project Management", "Estimating"],
-    },
-    {
-        id: "orient-heights-station",
-        imageHref: "orient-heights-station-2",
-        roles: ["Estimating", "Risk Assessment"],
-    },
-];
-
+import { projects } from "../utils/projects";
+import StationIcon from "@/Components/StationIcon";
+import { border } from "../utils/colors";
+import EditorH3 from "@/editor/EditorH3";
+import EditorH2 from "@/editor/EditorH2";
+import PageContainer from "@/Components/PageContainer";
+import ProjectsGrid from "@/Components/ProjectsGrid";
+import BuildingIcon from "@/Components/BuildingIcon";
 
 const Projects: React.FC = () => {
+    return (
+        <PageContainer>
+            <div
+                className="project-margin-top"
+                style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "100%",
+                }}
+            >
+                <div
+                    className="flex-direction"
+                    style={{
+                        width: "100%",
+                        display: "flex",
+                        borderBlock: border,
+                        background: "white",
+                    }}
+                >
+                    <div
+                        className="internal-inline-padding"
+                        style={{
+                            height: "22rem",
+                            width: "22rem",
+                            paddingBlock: "2rem",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            // background: "#f2f2f2",
+                        }}
+                    >
+                        {/* <StationIcon /> */}
+
+                        <BuildingIcon />
+                    </div>
+                    <div
+                        style={{
+                            height: "auto",
+                            width: 0,
+                            borderRight: border,
+                        }}
+                    />
+                    <div
+                        style={{
+                            width: "auto",
+                            height: 0,
+                            borderBottom: border,
+                        }}
+                    />
+                    <div
+                        className="internal-inline-padding"
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "flex-end",
+                            height: "auto",
+                            paddingBlock: "2rem",
+                        }}
+                    >
+                        <EditorH1
+                            id={`projects-page-title`}
+                            style={{
+                                fontSize: "Clamp(2rem, 3vw, 2.8rem)",
+                                fontWeight: 700,
+                                lineHeight: "1.2",
+                                textTransform: "uppercase",
+                                letterSpacing: "0.08em",
+                            }}
+                        />
+                        <EditorP
+                            id={`projects-page-hero-text`}
+                            style={{
+                                maxWidth: "30rem",
+                                marginTop: "1.6rem",
+                            }}
+                        />
+                    </div>
+                </div>
+                <div style={{ marginTop: "2rem" }} />
+                <ProjectsGrid projects={projects} />
+            </div>
+        </PageContainer>
+    );
     return (
         <main
             style={{

@@ -6,24 +6,84 @@ import EditorP from "@/editor/EditorP";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import PreviewSectionTop from "./PreviewSectionTop";
+import StationIcon from "./StationIcon";
+import { border } from "@/app/utils/colors";
+import BlocksIcon from "./BlocksIcon";
+import { clientele } from "@/app/utils/clientele";
 
-export const clientele = [
-    { name: "Xorail" },
-    { name: "MBTA" },
-    { name: "Rhode Island College" },
-    { name: "H.V. Collins" },
-    { name: "Amgen" },
-    { name: "City of Cerritos" },
-    { name: "Mission Hospital" },
-    { name: "VTrans" },
-    { name: "MassDOT" },
-    { name: "ConDOT" },
-    { name: "AECOM" },
-    { name: "VHB" },
-    { name: "Kleinfelder" },
-];
 
 const Clientele: React.FC = () => {
+    return (
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                marginTop: "8rem",
+            }}
+        >
+            <PreviewSectionTop path={"home-page-clientele"}>
+                <BlocksIcon />
+            </PreviewSectionTop>
+
+            <div
+                className="services-links-border internal-inline-padding-left"
+                style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    borderBlock: border,
+                    paddingBlock: "0.6rem",
+                    marginTop: "1.6rem",
+                    background: "white",
+                }}
+            >
+                {clientele.map((client) => (
+                    <div
+                        key={client.name}
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            paddingBlock: "0.8rem",
+                            paddingRight: "3rem",
+                            fontSize: "1.4rem",
+                            opacity: 0.8,
+                            // fontFamily: "Favorit",
+                            // textTransform: "uppercase",
+                            fontWeight: 800,
+                        }}
+                    >
+                        {client.name}
+                    </div>
+                ))}
+                <div style={{ width: "100%", height: 0 }} />
+            </div>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    alignItems: "center",
+                    // borderBlock: border,
+                }}
+            >
+                <Link
+                    href="/projects"
+                    className="internal-inline-padding green-hover"
+                    style={{
+                        paddingBlock: "1rem",
+                        // fontSize: "1.2rem",
+                        fontWeight: 700,
+                        lineHeight: "1.2",
+                        textTransform: "uppercase",
+                        fontFamily: "Favorit",
+                    }}
+                >
+                    View All Clientele →
+                </Link>
+            </div>
+        </div>
+    );
     return (
         <div>
             <div
@@ -129,7 +189,7 @@ const Clientele: React.FC = () => {
                 }}
             />
             <div
-            className="flex-direction clientele-list-container"
+                className="flex-direction clientele-list-container"
                 style={{
                     display: "flex",
                     marginTop: "2rem",
@@ -144,7 +204,7 @@ const Clientele: React.FC = () => {
                 {clientele.map((client) => {
                     return (
                         <div
-                        className="client-name"
+                            className="client-name"
                             key={client.name}
                             style={{
                                 display: "flex",

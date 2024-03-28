@@ -7,11 +7,15 @@ import EditorDiv from "@/editor/EditorDiv";
 import EditorH1 from "@/editor/EditorH1";
 import EditorP from "@/editor/EditorP";
 import EditorH2 from "@/editor/EditorH2";
-import { projects } from "./projects/page";
 import Certifications from "@/Components/Certifications";
 import About from "@/Components/About";
 import Clientele from "@/Components/Clientele";
 import Services from "@/Components/Services";
+import Projects from "@/Components/Projects";
+import { projects } from "./utils/projects";
+import { border } from "./utils/colors";
+import Hero from "@/Components/Hero";
+import PageContainer from "@/Components/PageContainer";
 
 export default function Home() {
     return (
@@ -23,7 +27,17 @@ export default function Home() {
                 // background: "#e3faf1",
             }}
         >
-            <div
+            <Hero />
+
+            <PageContainer>
+                    <Certifications />
+                    <Projects />
+                    <Services />
+                    <Clientele />
+                    <About />
+            </PageContainer>
+
+            {/* <div
                 className="hero-container"
                 style={{
                     position: "relative",
@@ -166,11 +180,9 @@ export default function Home() {
                         Contact Us Today →
                     </Link>
                 </div>
-            </div>
+            </div> */}
 
-            <Certifications />
-
-            <div
+            {/* <div
                 style={{
                     position: "relative",
                     width: "100%",
@@ -292,7 +304,7 @@ export default function Home() {
             </div>
             <Services />
             <Clientele />
-            <About />
+            <About /> */}
         </main>
     );
 }

@@ -3,8 +3,83 @@ import EditorH2 from "@/editor/EditorH2";
 import EditorP from "@/editor/EditorP";
 import Image from "next/image";
 import Link from "next/link";
+import PreviewSectionTop from "./PreviewSectionTop";
+import StationIcon from "./StationIcon";
+import { projects } from "@/app/utils/projects";
+import { border } from "@/app/utils/colors";
+import ToolboxIcon from "./ToolboxIcon";
 
 const Services = () => {
+    return (
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                marginTop: "5rem",
+            }}
+        >
+            <PreviewSectionTop path={"home-page-services"}>
+                <ToolboxIcon />
+            </PreviewSectionTop>
+            <div
+                className="flex-direction"
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "flex-end",
+                    borderBlock: border,
+                    marginTop: "1.6rem",
+                    background: "white",
+                }}
+            >
+                <div
+                    className="services-links-border internal-inline-padding-left mobile-padding-block"
+                    style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                    }}
+                >
+                    {services.map((service) => (
+                        <Link
+                            className="opacity-hover"
+                            href={`/services/${service.id}`}
+                            key={service.id}
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                paddingBlock: "1rem",
+                                paddingRight: "3rem",
+                                // fontSize: "1.1rem",
+                                fontFamily: "Favorit",
+                                textTransform: "uppercase",
+                            }}
+                        >
+                            {`${service.title} →`}
+                        </Link>
+                    ))}
+                    <div style={{ width: "100%", height: 0 }} />
+                </div>
+                <Link
+                    href="/services"
+                    className="services-link-border internal-inline-padding green-hover"
+                    style={{
+                        paddingBlock: "1rem",
+                        // fontSize: "1.1rem",
+                        fontWeight: 700,
+                        textTransform: "uppercase",
+                        fontFamily: "Favorit",
+                        whiteSpace: "nowrap",
+                        margin: 0,
+                    }}
+                >
+                    View All Services →
+                </Link>
+            </div>
+        </div>
+    );
+
     return (
         <div
             className="services-container"

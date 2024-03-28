@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import { use, useEffect, useRef, useState } from "react";
 import DropdownMenu from "./DropdownMenu";
 import useHideNavOnScroll from "@/hooks/useHideNavOnScroll";
+import { border } from "@/app/utils/colors";
 
 const Header: React.FC = () => {
     const linkRefs = useRef<(HTMLAnchorElement | null)[]>([]);
@@ -33,9 +34,11 @@ const Header: React.FC = () => {
                 transition: "0.3s",
                 zIndex: 1000,
                 background: 'white',
+                borderBottom: border,
             }}
         >
             <div
+            className="padding-inline"
                 style={{
                     width: "100%",
                     display: "flex",
@@ -43,7 +46,6 @@ const Header: React.FC = () => {
                     alignItems: "stretch",
                     zIndex: 1000,
                     letterSpacing: "0.1em",
-                    paddingInline: "5vw",
                 }}
             >
                 <Link href="/" style={{
@@ -74,6 +76,7 @@ const Header: React.FC = () => {
                                 justifyContent: "center",
                                 alignItems: "center",
                                 transition: "0.3s",
+                                fontFamily: "Favorit",
                             }}
                             href={link.href}
                         >

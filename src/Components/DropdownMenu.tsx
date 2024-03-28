@@ -3,6 +3,7 @@ import { useState, useRef, useEffect, FC } from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
+import { border } from "@/app/utils/colors";
 
 type DropdownMenuProps = {
     navLinks: { label: string; href: string }[];
@@ -113,6 +114,7 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ navLinks }) => {
                     letterSpacing: "0.04em",
                     opacity: 1,
                     fontSize: "1.2rem",background: 'white',
+                    borderBottom: border,
                 }}
             >
                 {navLinks.map((link) => (

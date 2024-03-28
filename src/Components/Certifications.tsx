@@ -1,4 +1,4 @@
-import { green } from "@/app/utils/colors";
+import { border, green } from "@/app/utils/colors";
 import EditorH2 from "@/editor/EditorH2";
 import EditorH3 from "@/editor/EditorH3";
 import EditorP from "@/editor/EditorP";
@@ -10,11 +10,11 @@ const Certifications: React.FC = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth="0.3"
+            strokeWidth="1"
             stroke="currentColor"
             style={{
-                width: "5rem",
-                height: "5rem",
+                width: "3rem",
+                height: "3rem",
             }}
         >
             <path
@@ -27,7 +27,131 @@ const Certifications: React.FC = () => {
 
     return (
         <div
-        className="certifications-container"
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                marginTop: "2rem",
+            }}
+        >
+            <div
+                className="flex-direction"
+                style={{
+                    width: "100%",
+                    display: "flex",
+                    borderBlock: border,
+                    background: green,
+                    justifyContent: "center",
+                }}
+            >
+                <div
+                    className="internal-inline-padding"
+                    style={{
+                        paddingBlock: "2rem",
+                        gap: "1rem",
+                        display: "flex",
+                        flexDirection: "column",
+                        color: "white",
+                        width: "100%",
+                    }}
+                >
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "1rem",
+                        }}
+                    >
+                        {checkMarkSvg}
+                        <EditorH3
+                            id="wbe-title"
+                            style={{
+                                fontSize: "1.4rem",
+                                fontWeight: 300,
+                                lineHeight: "1.2",
+                                opacity: 0.6,
+                                letterSpacing: "0.08em",
+                            }}
+                        />
+                    </div>
+                    <EditorH3
+                        id="wbe-text"
+                        style={{
+                            fontSize: "Clamp(1.6rem, 2vw, 2.2rem)",
+                            fontWeight: 700,
+                            lineHeight: "1.2",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.08em",
+                            paddingTop: "1rem",
+                            maxWidth: "20rem",
+                        }}
+                    />
+                </div>
+
+                <div
+                    style={{
+                        height: "auto",
+                        width: 0,
+                        borderRight: "1px solid#ffffff44",
+                    }}
+                />
+                <div
+                    style={{
+                        width: "auto",
+                        height: 0,
+                        borderBottom: "1px solid#ffffff44",
+                    }}
+                />
+                <div
+                    className="internal-inline-padding"
+                    style={{
+                        paddingBlock: "2rem",
+                        gap: "1rem",
+                        display: "flex",
+                        flexDirection: "column",
+                        color: "white",
+                        width: "100%",
+                    }}
+                >
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "1rem",
+                        }}
+                    >
+                        {checkMarkSvg}
+                        <EditorH3
+                            id="wbe-title"
+                            style={{
+                                fontSize: "1.4rem",
+                                fontWeight: 300,
+                                lineHeight: "1.2",
+                                opacity: 0.6,
+                                letterSpacing: "0.08em",
+                            }}
+                        />
+                    </div>
+                    <EditorH3
+                        id="dbe-text"
+                        style={{
+                            fontSize: "Clamp(1.6rem, 2vw, 2.2rem)",
+                            fontWeight: 700,
+                            lineHeight: "1.2",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.08em",
+                            paddingTop: "1rem",
+                            maxWidth: "20rem",
+                        }}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+
+    return (
+        <div
+            // className="certifications-container"
             style={{
                 display: "flex",
                 justifyContent: "center",
@@ -58,7 +182,7 @@ const Certifications: React.FC = () => {
                     }}
                 />
                 <div
-                className="certifications-cards-container"
+                    className="certifications-cards-container"
                     style={{
                         display: "flex",
                         flexWrap: "wrap",

@@ -1,0 +1,160 @@
+import React from "react";
+
+const TrainIcon: React.FC = () => {
+    return (
+        <svg
+            className="station-icon"
+            viewBox="0 0 382 280"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+                width: "100%",
+                height: "100%",
+            }}
+        >
+            <rect
+                width="55.1058"
+                height="110.212"
+                transform="matrix(0.865886 -0.500242 0.865886 0.500242 6 33.5664)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="33.3629"
+                height="110.212"
+                transform="matrix(-4.37114e-08 1 0.866305 0.499516 6 55.5586)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.2404"
+                height="55.1058"
+                transform="matrix(4.37114e-08 1 -0.866305 0.499516 149.125 61.2695)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="33.3414"
+                height="55.1058"
+                transform="matrix(4.37114e-08 1 -0.866305 0.499516 149.125 83.168)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.1058"
+                height="110.212"
+                transform="matrix(0.865886 -0.500242 0.865886 0.500242 119.18 97.7031)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.2038"
+                height="110.212"
+                transform="matrix(-4.37114e-08 1 0.866305 0.499516 119.18 97.8516)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.2404"
+                height="55.1058"
+                transform="matrix(4.37114e-08 1 -0.866305 0.499516 262.297 125.404)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.1058"
+                height="110.212"
+                transform="matrix(0.865886 -0.500242 0.865886 0.500242 119.18 97.7031)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="31.4255"
+                height="110.212"
+                transform="matrix(-4.37114e-08 1 0.866305 0.499516 119.18 121.631)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="32.624"
+                height="55.1058"
+                transform="matrix(4.37114e-08 1 -0.866305 0.499516 262.297 148.02)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.1058"
+                height="110.212"
+                transform="matrix(0.865886 -0.500242 0.865886 0.500242 232.359 163.248)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.2038"
+                height="110.212"
+                transform="matrix(-4.37114e-08 1 0.866305 0.499516 232.359 163.4)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="31.4405"
+                height="110.212"
+                transform="matrix(-4.37114e-08 1 0.866305 0.499516 232.359 187.164)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="55.2404"
+                height="55.1058"
+                transform="matrix(4.37114e-08 1 -0.866305 0.499516 375.477 190.955)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <rect
+                width="31.2762"
+                height="55.1058"
+                transform="matrix(4.37114e-08 1 -0.866305 0.499516 375.477 214.92)"
+                fill="white"
+                stroke="#8FC0AF"
+                stroke-width="1.8295"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M375.5 246.033L327.871 273.385L232.14 218.446V197.932L214.456 208.071L119.197 153.132V133.798L101.277 143.937L6.01846 88.762V33.5873L53.6479 6L148.907 60.9389V80.5094L166.827 70.1346L262.085 125.309V145.823L280.005 135.448L375.5 191.094V246.033Z"
+                stroke="#8FC0AF"
+                stroke-width="5"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+
+export default TrainIcon;
