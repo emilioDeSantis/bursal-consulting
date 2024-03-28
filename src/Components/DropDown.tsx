@@ -54,7 +54,9 @@ const Dropdown: FC<DropdownProps> = ({ id, data }) => {
                         cursor: "pointer",
                         fontSize: "1.1rem",
                     }}
-                >{data.title}</h3>
+                >
+                    {data && data.title}
+                </h3>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -76,19 +78,22 @@ const Dropdown: FC<DropdownProps> = ({ id, data }) => {
                 </svg>
             </div>
 
-            <p
-                id={`${id}-paragraph`}
-                style={{
-                    transition: "0.3s ease",
-                    fontWeight: 400,
-                    lineHeight: "1.4",
-                    paddingBottom: isOpen ? "1.6rem" : "0",
-                    opacity: 0.6,
-                    maxHeight: isOpen ? "8rem" : "0",
-                    overflow: "hidden",
-
-                }}
-            >{data.paragraph}</p>
+            {data && (
+                <p
+                    id={`${id}-paragraph`}
+                    style={{
+                        transition: "0.3s ease",
+                        fontWeight: 400,
+                        lineHeight: "1.4",
+                        paddingBottom: isOpen ? "1.6rem" : "0",
+                        opacity: 0.6,
+                        maxHeight: isOpen ? "8rem" : "0",
+                        overflow: "hidden",
+                    }}
+                >
+                    {data.paragraph}
+                </p>
+            )}
         </div>
     );
 };
