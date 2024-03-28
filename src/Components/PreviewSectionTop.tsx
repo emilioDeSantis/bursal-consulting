@@ -2,7 +2,7 @@ import React from "react";
 import EditorH2 from "@/editor/EditorH2";
 import EditorH3 from "@/editor/EditorH3";
 import EditorP from "@/editor/EditorP";
-import { border } from "@/app/utils/colors";
+import { border, green } from "@/app/utils/colors";
 
 interface PreviewSectionTopProps {
     children: React.ReactNode;

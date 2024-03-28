@@ -10,7 +10,7 @@ interface DropdownProps {
     data: {
         title: string;
         paragraph: string;
-    };
+    } | null;
 }
 
 // Define the Dropdown component
