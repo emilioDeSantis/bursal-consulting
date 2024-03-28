@@ -214,128 +214,128 @@ const Hero: React.FC = () => {
         </div>
     );
 
-    return (
-        <div
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                width: "100%",
-                height: "100vh",
-                alignItems: "center",
-                justifyContent: "space-between",
-                paddingTop: "3rem",
-                borderBottom: border,
-                background: "white",
-            }}
-        >
-            <div
-                // className="hero-image-container internal-inline-padding""
-                style={{
-                    width: "100%",
-                    // height: "30rem",
-                    height: "50vh",
-                    position: "relative",
-                    background: "#bbcccc",
-                }}
-            >
-                <Image
-                    fill
-                    src={"/orient-heights-station-2.png"}
-                    alt={"image"}
-                    sizes="100vw"
-                    priority
-                    style={{
-                        objectFit: "cover",
-                    }}
-                />
-                {/* <div
-                    className="padding-inline"
-                    style={{
-                        position: "absolute",
-                        bottom: "2rem",
-                    }}
-                >
-                    <h2
-                        style={{
-                            fontSize: "1.6rem",
-                            fontWeight: 700,
-                            // letterSpacing: "0.08em",
-                            lineHeight: "1",
-                            // textTransform: "uppercase",
-                            color: "white",
-                        }}
-                    >
-                        Bursal Consulting <br></br>& Management
-                    </h2>
-                </div> */}
-            </div>
+    // return (
+    //     <div
+    //         style={{
+    //             display: "flex",
+    //             flexDirection: "column",
+    //             width: "100%",
+    //             height: "100vh",
+    //             alignItems: "center",
+    //             justifyContent: "space-between",
+    //             paddingTop: "3rem",
+    //             borderBottom: border,
+    //             background: "white",
+    //         }}
+    //     >
+    //         <div
+    //             // className="hero-image-container internal-inline-padding""
+    //             style={{
+    //                 width: "100%",
+    //                 // height: "30rem",
+    //                 height: "50vh",
+    //                 position: "relative",
+    //                 background: "#bbcccc",
+    //             }}
+    //         >
+    //             <Image
+    //                 fill
+    //                 src={"/orient-heights-station-2.png"}
+    //                 alt={"image"}
+    //                 sizes="100vw"
+    //                 priority
+    //                 style={{
+    //                     objectFit: "cover",
+    //                 }}
+    //             />
+    //             {/* <div
+    //                 className="padding-inline"
+    //                 style={{
+    //                     position: "absolute",
+    //                     bottom: "2rem",
+    //                 }}
+    //             >
+    //                 <h2
+    //                     style={{
+    //                         fontSize: "1.6rem",
+    //                         fontWeight: 700,
+    //                         // letterSpacing: "0.08em",
+    //                         lineHeight: "1",
+    //                         // textTransform: "uppercase",
+    //                         color: "white",
+    //                     }}
+    //                 >
+    //                     Bursal Consulting <br></br>& Management
+    //                 </h2>
+    //             </div> */}
+    //         </div>
 
-            <div
-                className="padding-inline flex-direction"
-                style={{
-                    display: "flex",
-                    paddingTop: "3rem",
-                    paddingBottom: "7rem",
-                    justifyContent: "space-between",
-                    alignItems: "flex-end",
-                    width: "100%",
-                    flexGrow: 1,
-                }}
-            >
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        height: "100%",
-                        justifyContent: "space-evenly",
-                    }}
-                >
-                    <EditorH1
-                        id="home-page-title"
-                        style={{
-                            fontSize: "Clamp(1.8rem, 4vw, 3rem)",
-                            fontWeight: 700,
-                            letterSpacing: "0.08em",
-                            lineHeight: "1",
-                            textTransform: "uppercase",
-                            maxWidth: "Clamp(24rem, 40vw, 36rem)",
-                        }}
-                    />
-                    <EditorP
-                        id="home-page-hero-text"
-                        style={{
-                            lineHeight: "1.4",
-                            marginTop: "1.6rem",
-                            opacity: 0.6,
-                            maxWidth: "30rem",
-                        }}
-                    />
-                </div>
-                <Link
-                    className="button-hover"
-                    href="/contact"
-                    style={{
-                        // color: "#00BB7B",
-                        border: "1px solid #00BB7B",
-                        padding: "0.6rem 2.4rem",
-                        marginTop: "3rem",
-                        // background: "none",
-                        fontWeight: 700,
-                        // fontSize: "1.2rem",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        // borderRadius: "1000px",
-                        fontFamily: "Favorit",
-                        textTransform: "uppercase",
-                        whiteSpace: "nowrap",
-                    }}
-                >
-                    Contact Us Today →
-                </Link>
-            </div>
-        </div>
-    );
+    //         <div
+    //             className="padding-inline flex-direction"
+    //             style={{
+    //                 display: "flex",
+    //                 paddingTop: "3rem",
+    //                 paddingBottom: "7rem",
+    //                 justifyContent: "space-between",
+    //                 alignItems: "flex-end",
+    //                 width: "100%",
+    //                 flexGrow: 1,
+    //             }}
+    //         >
+    //             <div
+    //                 style={{
+    //                     display: "flex",
+    //                     flexDirection: "column",
+    //                     height: "100%",
+    //                     justifyContent: "space-evenly",
+    //                 }}
+    //             >
+    //                 <EditorH1
+    //                     id="home-page-title"
+    //                     style={{
+    //                         fontSize: "Clamp(1.8rem, 4vw, 3rem)",
+    //                         fontWeight: 700,
+    //                         letterSpacing: "0.08em",
+    //                         lineHeight: "1",
+    //                         textTransform: "uppercase",
+    //                         maxWidth: "Clamp(24rem, 40vw, 36rem)",
+    //                     }}
+    //                 />
+    //                 <EditorP
+    //                     id="home-page-hero-text"
+    //                     style={{
+    //                         lineHeight: "1.4",
+    //                         marginTop: "1.6rem",
+    //                         opacity: 0.6,
+    //                         maxWidth: "30rem",
+    //                     }}
+    //                 />
+    //             </div>
+    //             <Link
+    //                 className="button-hover"
+    //                 href="/contact"
+    //                 style={{
+    //                     // color: "#00BB7B",
+    //                     border: "1px solid #00BB7B",
+    //                     padding: "0.6rem 2.4rem",
+    //                     marginTop: "3rem",
+    //                     // background: "none",
+    //                     fontWeight: 700,
+    //                     // fontSize: "1.2rem",
+    //                     display: "flex",
+    //                     justifyContent: "center",
+    //                     alignItems: "center",
+    //                     // borderRadius: "1000px",
+    //                     fontFamily: "Favorit",
+    //                     textTransform: "uppercase",
+    //                     whiteSpace: "nowrap",
+    //                 }}
+    //             >
+    //                 Contact Us Today →
+    //             </Link>
+    //         </div>
+    //     </div>
+    // );
 };
 
 export default Hero;
