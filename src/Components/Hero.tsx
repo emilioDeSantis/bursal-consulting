@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                         }}
                     >
                         <div
-                            className="hero-green-width"
+                            className="hero-green-width shadow"
                             style={{
                                 background: green,
                                 height: "100%",
@@ -91,6 +91,7 @@ const Hero: React.FC = () => {
                     }}
                 >
                     <div
+                    className="shadow"
                         style={{
                             width: "100%",
                             height: "Calc(22vw + 11rem)",

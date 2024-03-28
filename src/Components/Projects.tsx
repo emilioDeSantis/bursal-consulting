@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                                     position: "relative",
                                     background: "#bbcccc",
                                 }}
-                                // className="shadow"
+
                             >
                                 <Image
                                     fill

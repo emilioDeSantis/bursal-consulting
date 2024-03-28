@@ -27,6 +27,7 @@ const Certifications: React.FC = () => {
 
     return (
         <div
+
             style={{
                 display: "flex",
                 flexDirection: "column",
@@ -35,7 +36,7 @@ const Certifications: React.FC = () => {
             }}
         >
             <div
-                className="flex-direction"
+                className="flex-direction shadow"
                 style={{
                     width: "100%",
                     display: "flex",

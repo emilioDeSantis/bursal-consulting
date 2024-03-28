@@ -210,11 +210,13 @@ textarea.admin:focus {
 .button-hover {
     transition: all 0.3s ease;
     color: #00bb7b;
+
 }
 
 .button-hover:hover {
     background: #00bb7b;
     color: white;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.2);
 }
 
 .nav-link {
