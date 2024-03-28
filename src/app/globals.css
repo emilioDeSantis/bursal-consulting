@@ -210,7 +210,6 @@ textarea.admin:focus {
 .button-hover {
     transition: all 0.3s ease;
     color: #00bb7b;
-
 }
 
 .button-hover:hover {
@@ -337,6 +336,15 @@ p {
     min-height: 100%;
 }
 
+.hero-padding-top {
+    padding-top: 5rem;
+}
+
+.green-negative {
+    top: -1.2rem;
+    bottom: -1.2rem;
+}
+
 @media (min-width: 768px) {
     .desktop {
         display: flex;
@@ -439,7 +447,7 @@ p {
     }
 
     .hero-green-width {
-        width: 40%;
+        width: 36%;
     }
 
     .hero-container-3 {
@@ -448,5 +456,13 @@ p {
 
     .hero-container-2 {
         align-items: center;
+    }
+
+    .hero-padding-top {
+        padding-top: 1rem;
+    }
+    .green-negative {
+        top: -3rem;
+        bottom: -3rem;
     }
 }

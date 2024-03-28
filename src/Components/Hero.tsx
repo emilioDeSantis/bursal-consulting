@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
                 }}
             ></div>
             <div
-                className="hero-container-2"
+                className="hero-container-2 hero-padding-top"
                 style={{
                     position: "absolute",
                     display: "flex",
@@ -45,19 +45,18 @@ const Hero: React.FC = () => {
                         display: "flex",
                         alignItems: "stretch",
                         width: "100%",
-                        height: "Calc(22vw + 11rem)",
+                        height: "Calc(30vw + 5rem)",
                         position: "relative",
                     }}
                 >
                     <div
+                    className="green-negative"
                         style={{
                             width: "100%",
                             position: "absolute",
                             borderBlock: border,
                             display: "flex",
                             justifyContent: "flex-end",
-                            top: "-2rem",
-                            bottom: "-2rem",
                         }}
                     >
                         <div
@@ -72,7 +71,7 @@ const Hero: React.FC = () => {
                 </div>
             </div>
             <div
-                className="hero-container-2"
+                className="hero-container-2  hero-padding-top"
                 style={{
                     position: "absolute",
                     display: "flex",
@@ -82,7 +81,7 @@ const Hero: React.FC = () => {
                 }}
             >
                 <div
-                    className="flex-direction-reverse padding-inline hero-container-3"
+                    className="flex-direction-reverse padding-inline hero-container-3 "
                     style={{
                         display: "flex",
                         alignItems: "stretch",
@@ -94,7 +93,7 @@ const Hero: React.FC = () => {
                     className="shadow"
                         style={{
                             width: "100%",
-                            height: "Calc(22vw + 11rem)",
+                            height: "Calc(30vw + 5rem)",
                             position: "relative",
                             background: "#bbcccc",
                             borderLeft: border,
