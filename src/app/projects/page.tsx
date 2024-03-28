@@ -12,6 +12,7 @@ import EditorH2 from "@/editor/EditorH2";
 import PageContainer from "@/Components/PageContainer";
 import ProjectsGrid from "@/Components/ProjectsGrid";
 import BuildingIcon from "@/Components/BuildingIcon";
+import HireButton from "@/Components/HireButton";
 
 const Projects: React.FC = () => {
     return (
@@ -94,6 +95,7 @@ const Projects: React.FC = () => {
                 </div>
                 <div style={{ marginTop: "2rem" }} />
                 <ProjectsGrid projects={projects} />
+                <HireButton />
             </div>
         </PageContainer>
     );

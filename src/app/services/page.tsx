@@ -10,6 +10,7 @@ import { border } from "../utils/colors";
 import StationIcon from "@/Components/StationIcon";
 import ToolboxIcon from "@/Components/ToolboxIcon";
 import { services } from "../utils/services";
+import HireButton from "@/Components/HireButton";
 
 const Projects: React.FC = () => {
     return (

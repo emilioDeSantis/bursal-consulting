@@ -11,6 +11,7 @@ import { border, green } from "@/app/utils/colors";
 import { projects } from "@/app/utils/projects";
 import PageContainer from "@/Components/PageContainer";
 import ProjectsGrid from "@/Components/ProjectsGrid";
+import HireButton from "@/Components/HireButton";
 
 const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
     params,
@@ -295,6 +296,7 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
                     Other Past Projects
                 </h3>
                 <ProjectsGrid projects={projects.filter((p) => p.id !== project?.id)} />
+                <HireButton />
             </div>
         </PageContainer>
     );

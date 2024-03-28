@@ -58,6 +58,6 @@ export const projects = [
     {
         id: "west-haven-station",
         imageHref: "west-haven-station",
-        roles: ["Project Management", "Estimating"],
+        roles: ["Estimating"],
     },
 ];

@@ -20,7 +20,7 @@ const Header: React.FC = () => {
         { label: "Projects", href: "/projects" },
         { label: "Services", href: "/services" },
         { label: "Clientele", href: "/clientele" },
-        { name: "Contact", href: "/contact" },
+        { label: "Contact", href: "/contact" },
     ];
     return (
         <div
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                                 justifyContent: "center",
                                 alignItems: "center",
                                 transition: "0.3s",
-                                fontFamily: "Favorit",
+                                fontWeight: 400,
                             }}
                             href={link.href}
                         >

@@ -16,6 +16,7 @@ import { projects } from "./utils/projects";
 import { border } from "./utils/colors";
 import Hero from "@/Components/Hero";
 import PageContainer from "@/Components/PageContainer";
+import HireButton from "@/Components/HireButton";
 
 export default function Home() {
     return (
@@ -30,11 +31,12 @@ export default function Home() {
             <Hero />
 
             <PageContainer>
-                    <Certifications />
-                    <Projects />
-                    <Services />
-                    <Clientele />
-                    <About />
+                <Certifications />
+                <Projects />
+                <Services />
+                <Clientele />
+                <About />
+                <HireButton />
             </PageContainer>
 
             {/* <div

@@ -12,12 +12,13 @@ import ToolboxIcon from "@/Components/ToolboxIcon";
 import { services } from "../utils/services";
 import BlocksIcon from "@/Components/BlocksIcon";
 import { clientele } from "../utils/clientele";
+import HireButton from "@/Components/HireButton";
 
 const Clientele: React.FC = () => {
     return (
         <PageContainer>
             <div
-            className="project-margin-top"
+                className="project-margin-top"
                 style={{
                     display: "flex",
                     flexDirection: "column",
@@ -90,38 +91,40 @@ const Clientele: React.FC = () => {
                         />
                     </div>
                 </div>
-            <div
-                className="services-links-border internal-inline-padding-left"
-                style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    borderBlock: border,
-                    paddingBlock: "0.6rem",
-                    marginTop: "1.6rem",
-                    background: "white",
-                }}
-            >
-                {clientele.map((client) => (
-                    <div
-                        key={client.name}
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            paddingBlock: "0.8rem",
-                            paddingRight: "3rem",
-                            fontSize: "1.4rem",
-                            opacity: 0.8,
-                            // fontFamily: "Favorit",
-                            // textTransform: "uppercase",
-                            fontWeight: 800,
-                        }}
-                    >
-                        {client.name}
-                    </div>
-                ))}
-                <div style={{ width: "100%", height: 0 }} />
-            </div>
+                <div
+                    className="services-links-border internal-inline-padding-left"
+                    style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        borderBlock: border,
+                        paddingBlock: "0.6rem",
+                        marginTop: "1.6rem",
+                        background: "white",
+                    }}
+                >
+                    {clientele.map((client) => (
+                        <div
+                            key={client.name}
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                paddingBlock: "0.8rem",
+                                paddingRight: "3rem",
+                                fontSize: "1.4rem",
+                                opacity: 0.8,
+                                // fontFamily: "Favorit",
+                                // textTransform: "uppercase",
+                                fontWeight: 800,
+                            }}
+                        >
+                            {client.name}
+                        </div>
+                    ))}
+                    <div style={{ width: "100%", height: 0 }} />
+                </div>
+
+                <HireButton />
             </div>
         </PageContainer>
     );

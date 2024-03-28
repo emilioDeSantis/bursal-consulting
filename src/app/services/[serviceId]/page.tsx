@@ -16,6 +16,7 @@ import { projects } from "@/app/utils/projects";
 import PageContainer from "@/Components/PageContainer";
 import { border } from "@/app/utils/colors";
 import ProjectsGrid from "@/Components/ProjectsGrid";
+import HireButton from "@/Components/HireButton";
 
 const ServicesPage: React.FC<{ params: { serviceId: string } }> = ({
     params,
@@ -173,6 +174,8 @@ const ServicesPage: React.FC<{ params: { serviceId: string } }> = ({
                         project.roles.includes(service?.title)
                     )}
                 />
+
+                <HireButton />
             </div>
         </PageContainer>
     );
