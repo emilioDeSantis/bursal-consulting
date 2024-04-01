@@ -5,6 +5,7 @@ import React, { FC } from "react";
 import firestore from "../../firebaseConfig";
 import AdminDiv from "./admin/AdminDiv";
 import Dropdown from "@/Components/DropDown";
+import { COLLECTION_NAME } from "@/app/utils/firestore";
 
 interface EditorDropdownProps {
     id: string; // Accepts an id to uniquely identify each dropdown
@@ -14,10 +15,10 @@ interface EditorDropdownProps {
 const EditorDropdown: FC<EditorDropdownProps> = async ({ id }) => {
     const fetchDataFromFirestore = async () => {
         if (process.env.IS_ADMIN === "false") {
-            const titleDocRef = doc(firestore, "elements", `${id}-title`);
+            const titleDocRef = doc(firestore, COLLECTION_NAME, `${id}-title`);
             const paragraphDocRef = doc(
                 firestore,
-                "elements",
+                COLLECTION_NAME,
                 `${id}-paragraph`
             );
             try {

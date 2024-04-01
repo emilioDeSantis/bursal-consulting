@@ -1,7 +1,8 @@
 "use client";
 import { FC, useState, useEffect, useRef } from "react";
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, getDocs } from "firebase/firestore";
 import firestore from "../../../firebaseConfig";
+import { COLLECTION_NAME } from "@/app/utils/firestore";
 
 interface AdminDivProps {
     id: string;
@@ -16,7 +17,7 @@ const AdminDiv: FC<AdminDivProps> = ({ id, style }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const docRef = doc(firestore, "elements", id);
+                const docRef = doc(firestore, COLLECTION_NAME, id);
                 const docSnap = await getDoc(docRef);
                 if (docSnap.exists()) {
                     const fetchedText = docSnap.data().text || "";
@@ -47,7 +48,7 @@ const AdminDiv: FC<AdminDivProps> = ({ id, style }) => {
             return;
         }
         try {
-            await setDoc(doc(firestore, "elements", id), { text });
+            await setDoc(doc(firestore, COLLECTION_NAME, id), { text });
             setDbText(text); // Update dbText with the new saved text
         } catch (error) {
             console.error("Error updating document:", error);
@@ -60,6 +61,36 @@ const AdminDiv: FC<AdminDivProps> = ({ id, style }) => {
     const handleDiscardChanges = () => {
         setText(dbText); // Revert text to the last saved state
     };
+
+    const duplicate = async () => {
+        const snapshot = await getDocs(collection(firestore, ""));
+
+        const docs = snapshot.docs;
+
+
+
+        docs.forEach(async (document) => {
+            // console.log("document", document);
+
+            try {
+                // console.log("run");
+                // console.log("Document data:", document.data());
+                await setDoc(doc(firestore, COLLECTION_NAME, document.id), document.data());
+                console.log("Document copied successfully");    
+            } catch (error) {
+                console.error("Error copying:", error);
+                alert(
+                    "Error copying documents, check the console for more information."
+                );
+            }
+        });
+    };
+
+    // return (
+    //     <button onClick={duplicate}>
+    //         Duplicat db
+    //     </button>
+    // )
 
     return (
         <div style={{ position: "relative" }}>
@@ -77,12 +108,15 @@ const AdminDiv: FC<AdminDivProps> = ({ id, style }) => {
                         top: "0",
                         right: "0",
                         display: "flex",
-                        gap: '2rem', // Align buttons next to each other
+                        gap: "2rem", // Align buttons next to each other
                     }}
                 >
                     <button
-                        style={{ // Adds some space between the buttons
-                        }}
+                        style={
+                            {
+                                // Adds some space between the buttons
+                            }
+                        }
                         onClick={handleDiscardChanges}
                     >
                         Discard
