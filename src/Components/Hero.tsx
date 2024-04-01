@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
                     width: "100%",
                     height: "100%",
                     borderInline: border,
-                    zIndex: 10,
+                    zIndex: 5,
                 }}
             ></div>
             <div
@@ -57,6 +57,7 @@ const Hero: React.FC = () => {
                             borderBlock: border,
                             display: "flex",
                             justifyContent: "flex-end",
+
                         }}
                     >
                         <div
@@ -120,6 +121,7 @@ const Hero: React.FC = () => {
                             justifyContent: "space-between",
                             minHeight: "100%",
                             flexGrow: 1,
+                            zIndex: 10,
                         }}
                     >
                         <div />
@@ -202,7 +204,6 @@ const Hero: React.FC = () => {
                                     textTransform: "uppercase",
                                     whiteSpace: "nowrap",
                                     width: "fit-content",
-                                    zIndex: 10,
                                 }}
                             >
                                 Contact →
