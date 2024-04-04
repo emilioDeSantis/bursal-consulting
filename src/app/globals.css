@@ -345,6 +345,13 @@ p {
     bottom: -1.2rem;
 }
 
+
+.contact-icon-container {
+
+    height: 15rem;
+    width: 15rem;
+}
+
 @media (min-width: 768px) {
     .desktop {
         display: flex;
@@ -464,5 +471,10 @@ p {
     .green-negative {
         top: -3rem;
         bottom: -3rem;
+    }
+    .contact-icon-container {
+
+        height: 22rem;
+        width: 22rem;
     }
 }
