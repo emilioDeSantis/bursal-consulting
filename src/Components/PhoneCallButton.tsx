@@ -29,7 +29,7 @@ const PhoneCallButton = ({ style }: { style?: React.CSSProperties }) => {
                 fontWeight: 300,
                 width: "100%",
                 marginTop: "1rem",
-                fontFamily: "Aeonik",
+                fontFamily: "Poppins",
                 cursor: "pointer",
             }}
         >

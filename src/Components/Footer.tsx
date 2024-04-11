@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
                                             textTransform: "none",
                                             fontWeight: 300,
                                             fontSize: "1.4rem",
-                                            fontFamily: "Aeonik",
+                                            fontFamily: "Poppins",
                                             letterSpacing: "0.04em",
                                         }}
                                     >

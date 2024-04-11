@@ -163,7 +163,7 @@ const ProjectPreview: FC<ProjectPreviewProps> = ({ projectId, imageHref }) => {
                         marginTop: "2rem",
                         fontWeight: 300,
                         fontSize: "1.2rem",
-                        fontFamily: "Aeonik",
+                        fontFamily: "Poppins",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",

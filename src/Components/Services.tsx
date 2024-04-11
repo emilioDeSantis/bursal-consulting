@@ -206,8 +206,7 @@ const Services = () => {
     //                     marginTop: "Clamp(2rem, 5vw, 3rem)",
     //                     background: "none",
     //                     fontWeight: 300,
-    //                     fontSize: "1.2rem",
-    //                     fontFamily: "Aeonik",
+    //                     fontSize: "1.2rem",\
     //                     display: "flex",
     //                     justifyContent: "center",
     //                     alignItems: "center",

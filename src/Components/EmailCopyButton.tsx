@@ -48,7 +48,7 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
         fontWeight: 400,
         width: "100%",
         marginTop: "1rem",
-        fontFamily: "Aeonik",
+        fontFamily: "Poppins",
         cursor: "pointer", // Change the cursor to pointer on hover
       }}
     >

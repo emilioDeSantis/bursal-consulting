@@ -539,7 +539,6 @@ const ProjectPage: React.FC<{ params: { projectId: string } }> = ({
     //                     marginTop: "2rem",
     //                     fontWeight: 400,
     //                     fontSize: "1.1rem",
-    //                     fontFamily: "Aeonik",
     //                     display: "flex",
     //                     justifyContent: "center",
     //                     alignItems: "center",
