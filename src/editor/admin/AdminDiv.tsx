@@ -63,9 +63,10 @@ const AdminDiv: FC<AdminDivProps> = ({ id, style }) => {
     };
 
     const duplicate = async () => {
-        const snapshot = await getDocs(collection(firestore, ""));
+        const snapshot = await getDocs(collection(firestore, "unpublished-elements"));
 
         const docs = snapshot.docs;
+
 
 
 
@@ -75,7 +76,7 @@ const AdminDiv: FC<AdminDivProps> = ({ id, style }) => {
             try {
                 // console.log("run");
                 // console.log("Document data:", document.data());
-                await setDoc(doc(firestore, COLLECTION_NAME, document.id), document.data());
+                await setDoc(doc(firestore, "published-elements", document.id), document.data());
                 console.log("Document copied successfully");    
             } catch (error) {
                 console.error("Error copying:", error);
@@ -87,7 +88,9 @@ const AdminDiv: FC<AdminDivProps> = ({ id, style }) => {
     };
 
     // return (
-    //     <button onClick={duplicate}>
+    //     <button onClick={duplicate} style={{
+    //         color: "black",
+    //     }}>
     //         Duplicat db
     //     </button>
     // )
