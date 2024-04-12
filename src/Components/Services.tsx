@@ -19,8 +19,8 @@ const Services = () => {
                 marginTop: "5rem",
             }}
         >
-            <PreviewSectionTop path={"home-page-services"}>
-                <ToolboxIcon />
+            <PreviewSectionTop path={"home-page-services"} src="/cerritos-center.png">
+                {/* <ToolboxIcon /> */}
             </PreviewSectionTop>
             <div
                 className="flex-direction"

@@ -101,6 +101,82 @@ const PreviewSectionTop: React.FC<PreviewSectionTopProps> = ({
         //     </div>
         // </div>
 
+        // <div
+        //     className="flex-direction"
+        //     style={{
+        //         width: "100%",
+        //         display: "flex",
+        //         borderBlock: border,
+        //         background: "white",
+        //     }}
+        // >
+        //     <div
+        //     className="illustration-container"
+        //         style={{
+        //             position: "relative",
+        //             // background: green,
+        //             height: "22rem",
+        //         }}
+        //     >
+        //         <Image
+        //             fill
+        //             src={src}
+        //             alt={"image"}
+        //             sizes="400px"
+        //             priority
+        //             style={{
+        //                 objectFit: "cover",
+        //                 // mixBlendMode: "screen",
+        //                 // opacity: 0.4,
+        //             }}
+        //         />
+        //     </div>
+        //     <div
+        //         style={{
+        //             height: "auto",
+        //             width: 0,
+        //             borderRight: border,
+        //         }}
+        //     />
+        //     <div
+        //         style={{
+        //             width: "auto",
+        //             height: 0,
+        //             borderBottom: border,
+        //         }}
+        //     />
+        //     <div
+        //         className="internal-inline-padding"
+        //         style={{
+        //             display: "flex",
+        //             flexDirection: "column",
+        //             justifyContent: "flex-end",
+        //             height: "auto",
+        //             paddingBlock: "2rem",
+        //             gap: "1.6rem",
+        //         }}
+        //     >
+        //         <EditorH3
+        //             id={`${path}-subtitle`}
+        //             style={{
+        //                 fontSize: "Clamp(2rem, 3vw, 2.8rem)",
+        //                 fontWeight: 700,
+        //                 lineHeight: "1.2",
+        //                 textTransform: "uppercase",
+        //                 letterSpacing: "0.08em",
+        //                 paddingTop: "0rem",
+        //             }}
+        //         />
+        //         <EditorP
+        //             id={`${path}-text`}
+        //             style={{
+        //                 maxWidth: "30rem",
+        //             }}
+        //         />
+        //     </div>
+        // </div>
+
+
         <div
             className="flex-direction"
             style={{
@@ -108,43 +184,9 @@ const PreviewSectionTop: React.FC<PreviewSectionTopProps> = ({
                 display: "flex",
                 borderBlock: border,
                 background: "white",
+                // justifyContent: "center",
             }}
         >
-            <div
-            className="illustration-container"
-                style={{
-                    position: "relative",
-                    // background: green,
-                    height: "22rem",
-                }}
-            >
-                <Image
-                    fill
-                    src={src}
-                    alt={"image"}
-                    sizes="400px"
-                    priority
-                    style={{
-                        objectFit: "cover",
-                        // mixBlendMode: "screen",
-                        // opacity: 0.4,
-                    }}
-                />
-            </div>
-            <div
-                style={{
-                    height: "auto",
-                    width: 0,
-                    borderRight: border,
-                }}
-            />
-            <div
-                style={{
-                    width: "auto",
-                    height: 0,
-                    borderBottom: border,
-                }}
-            />
             <div
                 className="internal-inline-padding"
                 style={{

@@ -23,8 +23,12 @@ const Clientele: React.FC = () => {
                 marginTop: "8rem",
             }}
         >
-            <PreviewSectionTop path={"home-page-clientele"}>
-                <BlocksIcon />
+            <PreviewSectionTop path={"home-page-clientele"} 
+            // src="/mission-hospital.png"
+            src="/train4.png"
+
+            >
+                {/* <BlocksIcon /> */}
             </PreviewSectionTop>
 
             <div

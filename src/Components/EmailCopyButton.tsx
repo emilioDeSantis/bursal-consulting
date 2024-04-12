@@ -12,12 +12,12 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
   // Function to handle copying the email address
   const handleCopyEmail = () => {
     // Using the Clipboard API to copy the email address
-    navigator.clipboard.writeText(email).then(() => {
-      // Set the copied state to true
-      setCopied(true);
-    }).catch(err => {
-      console.error('Could not copy email: ', err);
-    });
+    // navigator.clipboard.writeText(email).then(() => {
+    //   // Set the copied state to true
+    //   setCopied(true);
+    // }).catch(err => {
+    //   console.error('Could not copy email: ', err);
+    // });
   };
 
   // Effect to reset the copied state after one second

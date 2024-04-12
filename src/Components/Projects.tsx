@@ -20,8 +20,9 @@ const Projects: React.FC = () => {
             }}
         >
             <PreviewSectionTop path={"home-page-projects"} 
-            src="/train2.png"
+            src="/train5.png"
             // src="/station3.png"
+        //    src="/assembly-square-station.png"
             >
                 {/* <StationIcon /> */}
                 {/* <TrainIcon /> */}
