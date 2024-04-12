@@ -24,7 +24,7 @@ const PhoneCallButton = ({ style }: { style?: React.CSSProperties }) => {
                 display: "flex",
                 justifyContent: "flex-start",
                 alignItems: "center",
-                gap: "1rem",
+                gap: "0.6rem",
                 opacity: 0.8,
                 fontWeight: 400,
                 width: "100%",
@@ -37,7 +37,7 @@ const PhoneCallButton = ({ style }: { style?: React.CSSProperties }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={1}
+                strokeWidth={1.5}
                 stroke={color} // Use extracted color for SVG stroke as well
                 className="w-6 h-6"
                 style={{

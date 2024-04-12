@@ -6,7 +6,7 @@ export const revalidate = 1;
 
 export const metadata = {
     openGraph: {
-        title: 'Building Success Through Expertise | Bursal Consulting and Management',
+        title: 'Bursal Consulting and Management | Building Success Through Expertise',
         description: 'Led by President Zeynep Bursal, Bursal Consulting and Management offers multifaceted construction services including project management, estimating, risk assessment, and scheduling. Proudly DBE and WBE certified, we bring precision and reliability to every project.',
       url: 'https://www.bursalconsulting.com/',
       siteName: 'bursalconsulting.com',
@@ -14,13 +14,13 @@ export const metadata = {
         {
           url: 'https://bursal-consulting.vercel.app/opengraph-image.png',
           width: 600,
-          height: 900,
+          height: 800,
         },
       ],
       locale: 'en_US',
       type: 'website',
     },
-    title: 'Building Success Through Expertise | Bursal Consulting and Management',
+    title: 'Bursal Consulting and Management | Building Success Through Expertise',
     description: 'Led by President Zeynep Bursal, Bursal Consulting and Management offers multifaceted construction services including project management, estimating, risk assessment, and scheduling. Proudly DBE and WBE certified, we bring precision and reliability to every project.',
   };
 

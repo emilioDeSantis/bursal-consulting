@@ -180,7 +180,7 @@ const Hero: React.FC = () => {
                                     textTransform: "uppercase",
                                     fontSize: "Clamp(2rem, 2vw, 2.4rem)",
                                     fontWeight: 600,
-                                    letterSpacing: "0.08em",
+                                    letterSpacing: "0.05em",
                                     color: "black",
                                     opacity: 1,
                                 }}

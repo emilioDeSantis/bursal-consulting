@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
                                             letterSpacing: "0.04em",
                                         }}
                                     >
-                                        {service.title} ↗
+                                        {service.title} →
                                     </Link>
                                 ))}
                             </ul>
@@ -165,8 +165,12 @@ const Footer: React.FC = () => {
                                 lineHeight: 1.8,
                             }}
                         >
-                            <EmailCopyButton />
-                            <PhoneCallButton />
+                            <EmailCopyButton style={{
+                                color: "#ffffff",
+                            }}/>
+                            <PhoneCallButton style={{
+                                color: "#ffffff",
+                            }}/>
                         </div>
                     </section>
                 </div>

@@ -37,13 +37,13 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
       style={{
         paddingBlock: "0.4rem",
         background: "none",
-        fontSize: "1.4rem",
+        fontSize: "1.3rem",
         color: style?.color || "white", // Use the provided color or default to white
         border: "none",
         display: "flex",
         justifyContent: "flex-start",
         alignItems: "center",
-        gap: "1rem",
+        gap: "0.6rem",
         opacity: 0.8,
         fontWeight: 400,
         width: "100%",
@@ -59,9 +59,9 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="currentColor"
+          stroke={style?.color || "white"}
           className="w-6 h-6"
-          style={{ height: "1.4rem", width: "1.4rem" }}
+          style={{ height: "1.4rem", minWidth: "1.4rem"}}
         >
           <path
             strokeLinecap="round"
@@ -75,9 +75,9 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="currentColor"
+          stroke={style?.color || "white"}
           className="w-6 h-6"
-          style={{ height: "1rem", width: "1rem" }}
+          style={{ height: "1.4rem", minWidth: "1.4rem"}}
         >
           <path
             strokeLinecap="round"
