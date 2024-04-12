@@ -21,7 +21,7 @@ const HireButton: React.FC = () => {
                     zIndex: 10,
                 }}
             >
-                Hire Zeynep Bursal →
+                Partner With Us →
             </Link>
         </div>
     );

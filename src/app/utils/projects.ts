@@ -18,7 +18,7 @@ export const projects = [
     {
         id: "mbta-wollaston",
         imageHref: "Wall",
-        roles: ["Estimating", "Risk Assessment"],
+        roles: ["Estimating", "Scheduling"],
     },
     {
         id: "ruggles-upgrade",
@@ -53,7 +53,7 @@ export const projects = [
     {
         id: "mission-hospital",
         imageHref: "mission-hospital",  
-        roles: ["Project Management", "Estimating"],
+        roles: ["Project Management"],
     },
     {
         id: "west-haven-station",

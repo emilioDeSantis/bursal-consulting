@@ -12,7 +12,7 @@ export const services = [
         title: "Risk Assessment",
     },
     {
-        id: "schedualing",
-        title: "Schedualing",
+        id: "scheduling",
+        title: "Scheduling",
     },
 ];

@@ -37,7 +37,7 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
       style={{
         paddingBlock: "0.4rem",
         background: "none",
-        fontSize: "1rem",
+        fontSize: "1.4rem",
         color: style?.color || "white", // Use the provided color or default to white
         border: "none",
         display: "flex",
@@ -47,7 +47,7 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
         opacity: 0.8,
         fontWeight: 400,
         width: "100%",
-        marginTop: "1rem",
+        marginTop: "1.6rem",
         fontFamily: "Poppins",
         cursor: "pointer", // Change the cursor to pointer on hover
       }}
@@ -61,7 +61,7 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
           strokeWidth={1.5}
           stroke="currentColor"
           className="w-6 h-6"
-          style={{ height: "1rem", width: "1rem" }}
+          style={{ height: "1.4rem", width: "1.4rem" }}
         >
           <path
             strokeLinecap="round"

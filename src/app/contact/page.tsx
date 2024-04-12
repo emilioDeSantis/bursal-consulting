@@ -73,8 +73,8 @@ const ContactPage: React.FC = () => {
                             marginTop: "1.6rem",
                         }}
                     />
-                    <PhoneCallButton style={{ color: "#0009" }} />
                     <EmailCopyButton style={{ color: "#0009" }} />
+                    <PhoneCallButton style={{ color: "#0009" }} />
                 </div>
             </div>
         </PageContainer>

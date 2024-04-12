@@ -158,15 +158,15 @@ const Footer: React.FC = () => {
                         <div
                             style={{
                                 fontWeight: 300,
-                                // marginTop: "0.5rem",
+                                marginTop: "-0.5rem",
                                 // opacity: 0.7,
                                 display: "flex",
                                 flexDirection: "column",
                                 lineHeight: 1.8,
                             }}
                         >
-                            <PhoneCallButton />
                             <EmailCopyButton />
+                            <PhoneCallButton />
                         </div>
                     </section>
                 </div>
@@ -189,7 +189,7 @@ const Footer: React.FC = () => {
                             opacity: 1,
                         }}
                     >
-                        {`© ${new Date().getFullYear()} Bursal Construction Management LLC.`}
+                        {`© ${new Date().getFullYear()} Bursal Consulting & Management LLC.`}
                     </p>
                     <Link
                         target="_blank"
