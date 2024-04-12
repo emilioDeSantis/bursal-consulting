@@ -31,7 +31,7 @@ const Certifications: React.FC = () => {
                 display: "flex",
                 flexDirection: "column",
                 width: "100%",
-                marginTop: "2rem",
+                marginTop: "3rem",
             }}
         >
             <div
@@ -54,22 +54,26 @@ const Certifications: React.FC = () => {
                         color: "white",
                         width: "100%",
                         alignItems: "center",
+                        justifyContent: "center",
                     }}
                 >
                     <div
                         style={{
                             display: "flex",
-                            flexDirection: "column",
+                            // flexDirection: "column",
+                            gap: "1rem",
+                            paddingRight: "2.4rem",
                         }}
                     >
+                        {checkMarkSvg}
                         <div
                             style={{
                                 display: "flex",
-                                alignItems: "center",
-                                gap: "1rem",
+                                flexDirection: "column",
+                                // alignItems: "center",
+                                gap: "0.4rem",
                             }}
                         >
-                            {checkMarkSvg}
                             <EditorH3
                                 id="wbe-title"
                                 style={{
@@ -80,19 +84,19 @@ const Certifications: React.FC = () => {
                                     letterSpacing: "0.08em",
                                 }}
                             />
+                            <EditorH3
+                                id="wbe-text"
+                                style={{
+                                    fontSize: "3rem",
+                                    fontWeight: 600,
+                                    lineHeight: "1.2",
+                                    textTransform: "uppercase",
+                                    letterSpacing: "0.08em",
+                                    // paddingTop: "0.4rem",
+                                    maxWidth: "20rem",
+                                }}
+                            />
                         </div>
-                        <EditorH3
-                            id="wbe-text"
-                            style={{
-                                fontSize: "5rem",
-                                fontWeight: 700,
-                                lineHeight: "1.2",
-                                textTransform: "uppercase",
-                                letterSpacing: "0.08em",
-                                paddingTop: "0.4rem",
-                                maxWidth: "20rem",
-                            }}
-                        />
                     </div>
                 </div>
 
@@ -120,22 +124,26 @@ const Certifications: React.FC = () => {
                         color: "white",
                         width: "100%",
                         alignItems: "center",
+                        justifyContent: "center",
                     }}
                 >
                     <div
                         style={{
                             display: "flex",
-                            flexDirection: "column",
+                            // flexDirection: "column",
+                            gap: "1rem",
+                            paddingRight: "2.4rem",
                         }}
                     >
+                        {checkMarkSvg}
                         <div
                             style={{
                                 display: "flex",
-                                alignItems: "center",
-                                gap: "1rem",
+                                flexDirection: "column",
+                                // alignItems: "center",
+                                gap: "0.4rem",
                             }}
                         >
-                            {checkMarkSvg}
                             <EditorH3
                                 id="wbe-title"
                                 style={{
@@ -146,19 +154,19 @@ const Certifications: React.FC = () => {
                                     letterSpacing: "0.08em",
                                 }}
                             />
+                            <EditorH3
+                                id="dbe-text"
+                                style={{
+                                    fontSize: "3rem",
+                                    fontWeight: 600,
+                                    lineHeight: "1.2",
+                                    textTransform: "uppercase",
+                                    letterSpacing: "0.08em",
+                                    // paddingTop: "0.4rem",
+                                    maxWidth: "20rem",
+                                }}
+                            />
                         </div>
-                        <EditorH3
-                            id="dbe-text"
-                            style={{
-                                fontSize: "5rem",
-                                fontWeight: 700,
-                                lineHeight: "1.2",
-                                textTransform: "uppercase",
-                                letterSpacing: "0.08em",
-                                paddingTop: "0.4rem",
-                                maxWidth: "20rem",
-                            }}
-                        />
                     </div>
                 </div>
             </div>

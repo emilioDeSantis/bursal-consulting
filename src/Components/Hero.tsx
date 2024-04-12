@@ -41,11 +41,11 @@ const Hero: React.FC = () => {
                 }}
             >
                 <div
+                className="hero-image-container-height"
                     style={{
                         display: "flex",
                         alignItems: "stretch",
                         width: "100%",
-                        height: "Calc(30vw + 5rem)",
                         position: "relative",
                     }}
                 >
@@ -91,10 +91,9 @@ const Hero: React.FC = () => {
                     }}
                 >
                     <div
-                    className="shadow"
+                    className="shadow hero-image-container-height"
                         style={{
                             width: "100%",
-                            height: "Calc(30vw + 5rem)",
                             position: "relative",
                             background: "#bbcccc",
                             borderLeft: border,

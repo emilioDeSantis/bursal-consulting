@@ -34,7 +34,7 @@ const Clientele: React.FC = () => {
                         background: "white",
                     }}
                 >
-                    <div
+                    {/* <div
                         className="internal-inline-padding"
                         style={{
                             height: "22rem",
@@ -47,6 +47,28 @@ const Clientele: React.FC = () => {
                         }}
                     >
                         <BlocksIcon />
+                    </div> */}
+
+                    <div
+                        className="illustration-container"
+                        style={{
+                            position: "relative",
+                            // background: green,
+                            // height: "22rem",
+                        }}
+                    >
+                        <Image
+                            fill
+                            src="/cubes1.png"
+                            alt={"image"}
+                            sizes="400px"
+                            priority
+                            style={{
+                                objectFit: "cover",
+                                // mixBlendMode: "screen",
+                                // opacity: 0.4,
+                            }}
+                        />
                     </div>
                     <div
                         style={{

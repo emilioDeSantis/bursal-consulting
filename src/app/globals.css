@@ -257,9 +257,15 @@ p {
 }
 .illustration-container {
     width: 100%;
+    height: Calc(30vw + 10rem);
 }
 
-@media (min-width: 768px) {
+
+.hero-image-container-height {
+    height: Calc(70vw - 4rem);
+}
+
+@media (min-width: 900px) {
     .desktop {
         display: flex;
     }
@@ -343,6 +349,7 @@ p {
     .internal-inline-padding-left {
         padding-left: 3rem;
     }
+    
 
     .mobile-padding-block {
         padding-block: 0;
@@ -387,5 +394,12 @@ p {
 
 .illustration-container {
     width: 22rem;
+    height: 22rem;
+}
+
+
+.hero-image-container-height {
+
+    height: Calc(30vw + 5rem);
 }
 }

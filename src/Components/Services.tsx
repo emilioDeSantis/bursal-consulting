@@ -19,7 +19,10 @@ const Services = () => {
                 marginTop: "5rem",
             }}
         >
-            <PreviewSectionTop path={"home-page-services"} src="/cerritos-center.png">
+            <PreviewSectionTop path={"home-page-services"} 
+            // src="/cerritos-center.png"
+            src="/train8.png"
+            >
                 {/* <ToolboxIcon /> */}
             </PreviewSectionTop>
             <div

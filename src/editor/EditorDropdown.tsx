@@ -40,7 +40,7 @@ const EditorDropdown: FC<EditorDropdownProps> = async ({ id }) => {
     };
 
     const dropdownData = await fetchDataFromFirestore();
-    if (dropdownData === null && process.env.IS_ADMIN === "false") return null;
+    if ((!dropdownData?.title || dropdownData?.title.length === 0) && process.env.IS_ADMIN === "false") return null;
 
 
     return (

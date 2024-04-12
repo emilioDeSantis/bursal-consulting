@@ -20,12 +20,12 @@ const Clientele: React.FC = () => {
                 display: "flex",
                 flexDirection: "column",
                 width: "100%",
-                marginTop: "8rem",
+                marginTop: "5rem",
             }}
         >
             <PreviewSectionTop path={"home-page-clientele"} 
             // src="/mission-hospital.png"
-            src="/train4.png"
+            src="/cubes1.png"
 
             >
                 {/* <BlocksIcon /> */}

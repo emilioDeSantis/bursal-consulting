@@ -16,11 +16,11 @@ const Projects: React.FC = () => {
                 display: "flex",
                 flexDirection: "column",
                 width: "100%",
-                marginTop: "5rem",
+                marginTop: "-2rem",
             }}
         >
             <PreviewSectionTop path={"home-page-projects"} 
-            src="/train5.png"
+            src="/building2.png"
             // src="/station3.png"
         //    src="/assembly-square-station.png"
             >

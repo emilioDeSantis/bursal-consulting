@@ -6,6 +6,7 @@ import EditorP from "@/editor/EditorP";
 import React from "react";
 import { border } from "../utils/colors";
 import TrainIcon from "@/Components/TrainIcon";
+import Image from "next/image";
 
 const ContactPage: React.FC = () => {
     return (
@@ -19,7 +20,7 @@ const ContactPage: React.FC = () => {
                     background: "white",
                 }}
             >
-                <div
+                {/* <div
                     className="internal-inline-padding contact-icon-container"
                     style={{
                         paddingBlock: "2rem",
@@ -30,7 +31,29 @@ const ContactPage: React.FC = () => {
                     }}
                 >
                     <TrainIcon />
-                </div>
+                </div> */}
+
+            <div
+            className="illustration-container"
+                style={{
+                    position: "relative",
+                    // background: green,
+                    // height: "22rem",
+                }}
+            >
+                <Image
+                    fill
+                    src="/bridge1.png"
+                    alt={"image"}
+                    sizes="400px"
+                    priority
+                    style={{
+                        objectFit: "cover",
+                        // mixBlendMode: "screen",
+                        // opacity: 0.4,
+                    }}
+                />
+            </div>
                 <div
                     style={{
                         height: "auto",

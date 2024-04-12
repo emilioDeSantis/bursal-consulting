@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
     return (
         <PageContainer>
             <div
-            className="project-margin-top"
+                className="project-margin-top"
                 style={{
                     display: "flex",
                     flexDirection: "column",
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
                         background: "white",
                     }}
                 >
-                    <div
+                    {/* <div
                         className="internal-inline-padding"
                         style={{
                             height: "22rem",
@@ -45,6 +45,28 @@ const Projects: React.FC = () => {
                         }}
                     >
                         <ToolboxIcon />
+                    </div> */}
+
+                    <div
+                        className="illustration-container"
+                        style={{
+                            position: "relative",
+                            // background: green,
+                            // height: "22rem",
+                        }}
+                    >
+                        <Image
+                            fill
+                            src="/train8.png"
+                            alt={"image"}
+                            sizes="400px"
+                            priority
+                            style={{
+                                objectFit: "cover",
+                                // mixBlendMode: "screen",
+                                // opacity: 0.4,
+                            }}
+                        />
                     </div>
                     <div
                         style={{
@@ -95,7 +117,7 @@ const Projects: React.FC = () => {
                         display: "flex",
                         flexWrap: "wrap",
                         // flexDirection: "column",
-                        // alignItems: "flex-start",   
+                        // alignItems: "flex-start",
                         borderBlock: border,
                         marginTop: "1.6rem",
                         justifyContent: "space-between",
@@ -119,7 +141,7 @@ const Projects: React.FC = () => {
                                 fontFamily: "Favorit",
                                 textTransform: "uppercase",
                                 transition: "0.3s",
-                                border: '1px solid #00BB7B',
+                                border: "1px solid #00BB7B",
                             }}
                         >
                             {`${service.title} →`}

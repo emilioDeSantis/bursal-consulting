@@ -31,9 +31,9 @@ export default function Home() {
             <Hero />
 
             <PageContainer>
-                <Certifications />
                 <Projects />
                 <Services />
+                <Certifications />
                 <Clientele />
                 <About />
                 <HireButton />
