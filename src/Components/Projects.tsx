@@ -4,7 +4,7 @@ import StationIcon from "./StationIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/app/utils/projects";
-import { border } from "@/app/utils/colors";
+import { border, green } from "@/app/utils/colors";
 import HoverOverlay from "./HoverOverlay";
 import TrainIcon from "./TrainIcon";
 import BuildingIcon from "./BuildingIcon";
@@ -19,10 +19,13 @@ const Projects: React.FC = () => {
                 marginTop: "5rem",
             }}
         >
-            <PreviewSectionTop path={"home-page-projects"}>
+            <PreviewSectionTop path={"home-page-projects"} 
+            src="/train2.png"
+            // src="/station3.png"
+            >
                 {/* <StationIcon /> */}
                 {/* <TrainIcon /> */}
-                <BuildingIcon/>
+                {/* <BuildingIcon/> */}
             </PreviewSectionTop>
 
             <div
@@ -56,7 +59,6 @@ const Projects: React.FC = () => {
                                     position: "relative",
                                     background: "#bbcccc",
                                 }}
-
                             >
                                 <Image
                                     fill

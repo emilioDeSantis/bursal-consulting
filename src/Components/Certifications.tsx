@@ -27,7 +27,6 @@ const Certifications: React.FC = () => {
 
     return (
         <div
-
             style={{
                 display: "flex",
                 flexDirection: "column",
@@ -48,45 +47,53 @@ const Certifications: React.FC = () => {
                 <div
                     className="internal-inline-padding"
                     style={{
-                        paddingBlock: "2rem",
+                        paddingBlock: "1.4rem",
                         gap: "1rem",
                         display: "flex",
                         flexDirection: "column",
                         color: "white",
                         width: "100%",
+                        alignItems: "center",
                     }}
                 >
                     <div
                         style={{
                             display: "flex",
-                            alignItems: "center",
-                            gap: "1rem",
+                            flexDirection: "column",
                         }}
                     >
-                        {checkMarkSvg}
-                        <EditorH3
-                            id="wbe-title"
+                        <div
                             style={{
-                                fontSize: "1.4rem",
-                                fontWeight: 300,
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "1rem",
+                            }}
+                        >
+                            {checkMarkSvg}
+                            <EditorH3
+                                id="wbe-title"
+                                style={{
+                                    fontSize: "1.4rem",
+                                    fontWeight: 300,
+                                    lineHeight: "1.2",
+                                    opacity: 0.8,
+                                    letterSpacing: "0.08em",
+                                }}
+                            />
+                        </div>
+                        <EditorH3
+                            id="wbe-text"
+                            style={{
+                                fontSize: "5rem",
+                                fontWeight: 700,
                                 lineHeight: "1.2",
-                                opacity: 0.6,
+                                textTransform: "uppercase",
                                 letterSpacing: "0.08em",
+                                paddingTop: "0.4rem",
+                                maxWidth: "20rem",
                             }}
                         />
                     </div>
-                    <EditorH3
-                        id="wbe-text"
-                        style={{
-                            fontSize: "Clamp(1.6rem, 2vw, 2.2rem)",
-                            fontWeight: 700,
-                            lineHeight: "1.2",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.08em",
-                            paddingTop: "1rem",
-                            maxWidth: "20rem",
-                        }}
-                    />
                 </div>
 
                 <div
@@ -106,45 +113,53 @@ const Certifications: React.FC = () => {
                 <div
                     className="internal-inline-padding"
                     style={{
-                        paddingBlock: "2rem",
+                        paddingBlock: "1.4rem",
                         gap: "1rem",
                         display: "flex",
                         flexDirection: "column",
                         color: "white",
                         width: "100%",
+                        alignItems: "center",
                     }}
                 >
                     <div
                         style={{
                             display: "flex",
-                            alignItems: "center",
-                            gap: "1rem",
+                            flexDirection: "column",
                         }}
                     >
-                        {checkMarkSvg}
-                        <EditorH3
-                            id="wbe-title"
+                        <div
                             style={{
-                                fontSize: "1.4rem",
-                                fontWeight: 300,
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "1rem",
+                            }}
+                        >
+                            {checkMarkSvg}
+                            <EditorH3
+                                id="wbe-title"
+                                style={{
+                                    fontSize: "1.4rem",
+                                    fontWeight: 300,
+                                    lineHeight: "1.2",
+                                    opacity: 0.8,
+                                    letterSpacing: "0.08em",
+                                }}
+                            />
+                        </div>
+                        <EditorH3
+                            id="dbe-text"
+                            style={{
+                                fontSize: "5rem",
+                                fontWeight: 700,
                                 lineHeight: "1.2",
-                                opacity: 0.6,
+                                textTransform: "uppercase",
                                 letterSpacing: "0.08em",
+                                paddingTop: "0.4rem",
+                                maxWidth: "20rem",
                             }}
                         />
                     </div>
-                    <EditorH3
-                        id="dbe-text"
-                        style={{
-                            fontSize: "Clamp(1.6rem, 2vw, 2.2rem)",
-                            fontWeight: 700,
-                            lineHeight: "1.2",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.08em",
-                            paddingTop: "1rem",
-                            maxWidth: "20rem",
-                        }}
-                    />
                 </div>
             </div>
         </div>

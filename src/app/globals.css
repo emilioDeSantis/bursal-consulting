@@ -255,6 +255,9 @@ p {
     height: 15rem;
     width: 15rem;
 }
+.illustration-container {
+    width: 100%;
+}
 
 @media (min-width: 768px) {
     .desktop {
@@ -381,4 +384,8 @@ p {
         height: 22rem;
         width: 22rem;
     }
+
+.illustration-container {
+    width: 22rem;
+}
 }
