@@ -33,7 +33,7 @@ export const projects = [
     {
         id: "assembly-square-station",
         imageHref: "assembly-square-station",
-        roles: ["Project Management", "Scheduling"],
+        roles: ["Estimating", "Scheduling"],
     },
     {
         id: "ric-renovation",
