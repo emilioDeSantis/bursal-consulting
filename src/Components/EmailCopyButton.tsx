@@ -75,7 +75,7 @@ const EmailCopyButton = ({ style }: { style?: React.CSSProperties }) => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke={style?.color || "white"}
-          className="w-6 h-6"
+          className="w-6 h-6 desktop"
           style={{ height: "1.4rem", minWidth: "1.4rem"}}
         >
           <path
