@@ -12,7 +12,7 @@ export const metadata = {
       siteName: 'bursalconsulting.com',
       images: [
         {
-          url: 'https://bursal-consulting.vercel.app/opengraph-image.png',
+          url: 'https://www.bursalconsulting.com/opengraph-image.png',
           width: 600,
           height: 800,
         },
