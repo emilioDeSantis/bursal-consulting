@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
                             >
                                 <Link href={"/"}>Home</Link>
                                 <Link href={"/projects"}>Projects</Link>
-                                <Link href={"/clientele"}>Clienetele</Link>
+                                <Link href={"/clientele"}>Clientele</Link>
                                 <div
                                     style={{
                                         height: "2rem",
