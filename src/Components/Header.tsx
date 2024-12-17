@@ -52,7 +52,9 @@ const Header: React.FC = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                
+                    height: "4rem",
+                    paddingBlock: "0.3rem",
+                    paddingInline: "0.4rem",
                 }}>
                     <Logo />
                 </Link>
